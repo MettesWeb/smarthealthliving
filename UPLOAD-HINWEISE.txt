@@ -1,0 +1,32 @@
+SMART HEALTH LIVING – KORRIGIERTES ERGÄNZUNGSPAKET
+Stand: 24.09.2026
+
+Enthalten:
+- 13 neue Rezept- und Wellnessseiten
+- green-morning-drink.html als angepasste Ersatzdatei
+- rezepte-bildergalerie.html mit allen 14 Rezeptmotiven und Direktlinks
+- index.html mit A–Z-Verzeichnis, 3×3-Galerievorschau und geändertem Energieplan-Popup
+- 13 neu erzeugte Rezeptbilder
+- 4 wechselnde Amazon-Storefront-Bilder
+- 1 neues Frauenmotiv ausschließlich für das Pop-up
+- die 2 unveränderten Original-Detox-Banner zur sicheren Vollständigkeit
+
+Wichtig korrigiert:
+- Der senkrechte Detox-Programmbanner auf der Indexseite bleibt unverändert.
+- Der breite Detox-Programmbanner auf allen Rezeptseiten bleibt unverändert.
+- Nur das Bild und der Inhalt des Pop-ups wurden auf den Energieplan angepasst.
+- Sichtbarer Abstand zwischen allen Seitenblöcken.
+- Zubereitung über die volle Breite unter Bild und Zutaten.
+- KI-Kennzeichnung direkt auf dem Rezeptbild.
+
+Upload:
+1. Die 13 neuen Rezeptseiten und rezepte-bildergalerie.html in den Website-Hauptordner hochladen.
+2. Die vorhandene green-morning-drink.html durch die enthaltene Version ersetzen.
+3. Die enthaltenen Bilddateien aus assets in den bestehenden assets-Ordner hochladen.
+4. Anschließend die vorhandene index.html durch die enthaltene index.html ersetzen.
+
+Nicht enthalten und nicht zu ersetzen:
+- styles.css
+- der Fabian-Banner
+
+Die Seiten erwarten weiterhin die vorhandenen Dateien styles.css, assets/nature-desktop.png, assets/nature-mobile.png und assets/hero-green.jpg.

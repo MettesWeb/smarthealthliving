@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alle Rezepte nach Themen | Smart Health Living</title>
+<meta name="description" content="Alle Rezepte von Smart Health Living nach Themen sortiert: Overnight Oats, warme Drinks, Suppen, Kinderrezepte, schnelle Gerichte, Cocktails und Gesundheit.">
+<link rel="stylesheet" href="styles.css">
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{overflow-x:hidden}
+.gallery-wrap{width:min(1180px,calc(100% - 24px));margin:16px auto 42px}
+.gallery-head{padding:24px 18px;text-align:center}
+.gallery-head h1{margin:.45rem 0 .25rem}
+.gallery-head p{max-width:720px;margin:.4rem auto 0;color:var(--muted)}
+.back-link{display:flex;margin:12px 0;width:100%}
+.topic-nav{display:flex;gap:9px;overflow-x:auto;padding:14px 2px 16px;scrollbar-width:thin;scroll-snap-type:x proximity}
+.topic-nav a{flex:0 0 auto;scroll-snap-align:start;border:1px solid var(--line);border-radius:999px;background:#fff;padding:10px 14px;color:var(--green-dark);font-size:.88rem;font-weight:850;box-shadow:0 7px 20px rgba(44,75,49,.07)}
+.topic-nav a:hover,.topic-nav a:focus-visible{background:var(--green);color:#fff;border-color:var(--green)}
+.recipe-section{margin-top:18px;padding-top:4px}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:0 2px 9px}
+.section-head h2{margin:0;font-size:clamp(1.25rem,4.6vw,1.75rem)}
+.section-head span{flex:0 0 auto;color:var(--muted);font-size:.78rem;font-weight:750}
+.recipe-row{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(180px,72vw);gap:12px;overflow-x:auto;padding:3px 2px 16px;scroll-snap-type:x mandatory;scrollbar-width:thin;outline:none}
+.recipe-row:focus-visible{outline:3px solid rgba(51,111,61,.32);outline-offset:3px;border-radius:12px}
+.recipe-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:17px;background:#fff;box-shadow:0 9px 24px rgba(44,75,49,.08);scroll-snap-align:start;transition:transform .18s ease,box-shadow .18s ease}
+.recipe-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(44,75,49,.14)}
+.recipe-image{position:relative;display:grid;place-items:center;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(145deg,#eef5eb,#dce9d6);color:var(--green-dark)}
+.recipe-image img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover}
+.image-placeholder{padding:16px;text-align:center;font-size:.88rem;font-weight:850}
+.recipe-image .ki{z-index:2}
+.recipe-name{padding:13px 14px 15px;color:var(--ink);font-family:Georgia,serif;font-size:1rem;font-weight:800;line-height:1.24}
+@media(min-width:620px){.gallery-wrap{width:min(1180px,calc(100% - 36px));margin-top:22px}.gallery-head{padding:34px}.recipe-row{grid-auto-columns:minmax(210px,36vw);gap:15px}.recipe-section{margin-top:25px}}
+@media(min-width:960px){.gallery-wrap{width:min(1180px,calc(100% - 52px))}.recipe-row{grid-auto-columns:calc((100% - 48px)/4)}.topic-nav{justify-content:center}.recipe-section{margin-top:30px}}
+</style>
+</head>
+<body>
+<header class="site-head"><div class="head-inner"><div class="head-left"><a class="home" href="index.html" aria-label="Startseite">⌂</a><a class="brand" href="index.html"><strong>Smart Health Living</strong><small>GESÜNDER. GLÜCKLICHER. DU.</small></a></div><a class="top-cta" href="https://vision.thegoodinside.com/shop/" target="_blank" rel="sponsored nofollow noopener">🌿 Dein gesünderes Ich beginnt hier →</a></div></header>
+<main class="gallery-wrap">
+  <section class="card gallery-head">
+    <span class="kicker">Rezepte entdecken</span>
+    <h1>Alle Rezepte</h1>
+    <p>Wähle einen Themenbereich oder scrolle durch die einzelnen Reihen. Ein Klick auf Bild oder Titel öffnet direkt das passende Rezept.</p>
+  </section>
+  <nav class="topic-nav" aria-label="Themenbereiche">
+<a href="#overnight-oats">Overnight Oats</a>
+<a href="#warme-drinks">Warme Drinks für kühle Tage</a>
+<a href="#suppen">Suppen</a>
+<a href="#kinder">Schnelle Rezepte für Kinder</a>
+<a href="#kuehle-tage">Schnelle Rezepte für kühle Tage</a>
+<a href="#cocktails">Cocktails</a>
+<a href="#gesundheit">Gesundheit</a>
+  </nav>
+  <a class="btn back-link" href="index.html#a-z">← Zurück zur Rezeptübersicht</a>
+    <section class="recipe-section" id="overnight-oats" aria-labelledby="heading-overnight-oats">
+      <div class="section-head"><h2 id="heading-overnight-oats">Overnight Oats</h2><span>5 Rezepte</span></div>
+      <div class="recipe-row" tabindex="0" aria-label="Overnight Oats – horizontal scrollen">
+        <a class="recipe-card" href="apfelkuchen-overnight-oats-zimt.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/apfelkuchen-overnight-oats-zimt.png" alt="Apfelkuchen-Overnight-Oats mit Zimt" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Apfelkuchen-Overnight-Oats mit Zimt</span></a>
+        <a class="recipe-card" href="high-protein-overnight-oats-quark.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/high-protein-overnight-oats-quark.png" alt="High-Protein-Overnight-Oats mit Quark" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">High-Protein-Overnight-Oats mit Quark</span></a>
+        <a class="recipe-card" href="kuerbis-overnight-oats-pumpkin-spice.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/kuerbis-overnight-oats-pumpkin-spice.png" alt="Kürbis-Overnight-Oats (Pumpkin Spice)" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Kürbis-Overnight-Oats (Pumpkin Spice)</span></a>
+        <a class="recipe-card" href="lebkuchen-overnight-oats.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/lebkuchen-overnight-oats.png" alt="Lebkuchen-Overnight-Oats" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Lebkuchen-Overnight-Oats</span></a>
+        <a class="recipe-card" href="schoko-bananen-overnight-oats.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/schoko-bananen-overnight-oats.png" alt="Schoko-Bananen-Overnight-Oats" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Schoko-Bananen-Overnight-Oats</span></a>
+      </div>
+    </section>
+    <section class="recipe-section" id="warme-drinks" aria-labelledby="heading-warme-drinks">
+      <div class="section-head"><h2 id="heading-warme-drinks">Warme Drinks für kühle Tage</h2><span>5 Rezepte</span></div>
+      <div class="recipe-row" tabindex="0" aria-label="Warme Drinks für kühle Tage – horizontal scrollen">
+        <a class="recipe-card" href="apfel-zimt-punsch-alkoholfrei.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/apfel-zimt-punsch-alkoholfrei.png" alt="Apfel-Zimt-Punsch ohne Alkohol" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Apfel-Zimt-Punsch ohne Alkohol</span></a>
+        <a class="recipe-card" href="chai-latte-ohne-fertigpulver.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/chai-latte-ohne-fertigpulver.png" alt="Chai Latte ohne Fertigpulver" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Chai Latte ohne Fertigpulver</span></a>
+        <a class="recipe-card" href="golden-milk.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/golden-milk.png" alt="Golden Milk" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Golden Milk</span></a>
+        <a class="recipe-card" href="heisse-schokolade-mit-datteln.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/heisse-schokolade-mit-datteln.png" alt="Heiße Schokolade mit Datteln" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Heiße Schokolade mit Datteln</span></a>
+        <a class="recipe-card" href="kuerbis-latte-selber-machen.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/kuerbis-latte-selber-machen.png" alt="Kürbis-Latte zum Selbermachen" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Kürbis-Latte zum Selbermachen</span></a>
+      </div>
+    </section>
+    <section class="recipe-section" id="suppen" aria-labelledby="heading-suppen">
+      <div class="section-head"><h2 id="heading-suppen">Suppen</h2><span>5 Rezepte</span></div>
+      <div class="recipe-row" tabindex="0" aria-label="Suppen – horizontal scrollen">
+        <a class="recipe-card" href="huehnersuppe-mit-gemuese.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/huehnersuppe-mit-gemuese.png" alt="Hühnersuppe mit Gemüse" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Hühnersuppe mit Gemüse</span></a>
+        <a class="recipe-card" href="karotten-ingwer-suppe.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/karotten-ingwer-suppe.png" alt="Karotten-Ingwer-Suppe" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Karotten-Ingwer-Suppe</span></a>
+        <a class="recipe-card" href="kuerbissuppe-kokosmilch-30-minuten.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/kuerbissuppe-kokosmilch-30-minuten.png" alt="Kürbissuppe mit Kokosmilch" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Kürbissuppe mit Kokosmilch</span></a>
+        <a class="recipe-card" href="rote-linsen-suppe.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/rote-linsen-suppe.png" alt="Rote-Linsen-Suppe" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Rote-Linsen-Suppe</span></a>
+        <a class="recipe-card" href="tomatensuppe-aus-dem-ofen.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/tomatensuppe-aus-dem-ofen.png" alt="Tomatensuppe aus dem Ofen" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Tomatensuppe aus dem Ofen</span></a>
+      </div>
+    </section>
+    <section class="recipe-section" id="kinder" aria-labelledby="heading-kinder">
+      <div class="section-head"><h2 id="heading-kinder">Schnelle Rezepte für Kinder</h2><span>5 Rezepte</span></div>
+      <div class="recipe-row" tabindex="0" aria-label="Schnelle Rezepte für Kinder – horizontal scrollen">
+        <a class="recipe-card" href="bananen-haferplaetzchen-ohne-zucker.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/bananen-haferplaetzchen-ohne-zucker.png" alt="Bananen-Haferplätzchen ohne Zucker" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Bananen-Haferplätzchen ohne Zucker</span></a>
+        <a class="recipe-card" href="gemuese-muffins-brotdose.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/gemuese-muffins-brotdose.png" alt="Gemüse-Muffins für die Brotdose" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Gemüse-Muffins für die Brotdose</span></a>
+        <a class="recipe-card" href="mini-pfannkuchen-mit-obst.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/mini-pfannkuchen-mit-obst.png" alt="Mini-Pfannkuchen mit Obst" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Mini-Pfannkuchen mit Obst</span></a>
+        <a class="recipe-card" href="nudeln-versteckte-gemuesesosse.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/nudeln-versteckte-gemuesesosse.png" alt="Nudeln mit versteckter Gemüsesoße" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Nudeln mit versteckter Gemüsesoße</span></a>
+        <a class="recipe-card" href="pizza-schnecken-blaetterteig.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/pizza-schnecken-blaetterteig.png" alt="Pizza-Schnecken mit Blätterteig" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Pizza-Schnecken mit Blätterteig</span></a>
+      </div>
+    </section>
+    <section class="recipe-section" id="kuehle-tage" aria-labelledby="heading-kuehle-tage">
+      <div class="section-head"><h2 id="heading-kuehle-tage">Schnelle Rezepte für kühle Tage</h2><span>5 Rezepte</span></div>
+      <div class="recipe-row" tabindex="0" aria-label="Schnelle Rezepte für kühle Tage – horizontal scrollen">
+        <a class="recipe-card" href="kartoffel-lauch-pfanne.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/kartoffel-lauch-pfanne.png" alt="Kartoffel-Lauch-Pfanne" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Kartoffel-Lauch-Pfanne</span></a>
+        <a class="recipe-card" href="ofengemuese-mit-feta.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/ofengemuese-mit-feta.png" alt="Ofengemüse mit Feta" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Ofengemüse mit Feta</span></a>
+        <a class="recipe-card" href="one-pot-nudeln-20-minuten.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/one-pot-nudeln-20-minuten.png" alt="One-Pot-Nudeln in 20 Minuten" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">One-Pot-Nudeln in 20 Minuten</span></a>
+        <a class="recipe-card" href="gemuesepfanne-reis-meal-prep.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/gemuesepfanne-reis-meal-prep.png" alt="Schnelle Gemüsepfanne mit Reis" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Schnelle Gemüsepfanne mit Reis</span></a>
+        <a class="recipe-card" href="suesskartoffel-bowl.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/suesskartoffel-bowl.png" alt="Süßkartoffel-Bowl" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Süßkartoffel-Bowl</span></a>
+      </div>
+    </section>
+    <section class="recipe-section" id="cocktails" aria-labelledby="heading-cocktails">
+      <div class="section-head"><h2 id="heading-cocktails">Cocktails</h2><span>7 Rezepte</span></div>
+      <div class="recipe-row" tabindex="0" aria-label="Cocktails – horizontal scrollen">
+        <a class="recipe-card" href="ananas-kokos-regenerationsdrink.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/ananas-kokos-regenerationsdrink.png" alt="Ananas-Kokos-Regenerationsdrink" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Ananas-Kokos-Regenerationsdrink</span></a>
+        <a class="recipe-card" href="grapefruit-kokos-reset.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/grapefruit-kokos-reset.png" alt="Grapefruit-Kokos-Reset" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Grapefruit-Kokos-Reset</span></a>
+        <a class="recipe-card" href="green-morning-drink.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/hero-green.jpg" alt="Green Morning Drink" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Green Morning Drink</span></a>
+        <a class="recipe-card" href="kamille-honig-abenddrink.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/kamille-honig-abenddrink.png" alt="Kamille-Honig-Abenddrink" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Kamille-Honig-Abenddrink</span></a>
+        <a class="recipe-card" href="kirsch-zimt-abenddrink.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/kirsch-zimt-abenddrink.png" alt="Kirsch-Zimt-Abenddrink" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Kirsch-Zimt-Abenddrink</span></a>
+        <a class="recipe-card" href="orangen-kokos-morgenmocktail.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/orangen-kokos-morgenmocktail.png" alt="Orangen-Kokos-Morgenmocktail" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Orangen-Kokos-Morgenmocktail</span></a>
+        <a class="recipe-card" href="rote-bete-energy-juice.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/rote-bete-energy-juice.png" alt="Rote-Bete-Energy-Juice" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Rote-Bete-Energy-Juice</span></a>
+      </div>
+    </section>
+    <section class="recipe-section" id="gesundheit" aria-labelledby="heading-gesundheit">
+      <div class="section-head"><h2 id="heading-gesundheit">Gesundheit</h2><span>7 Rezepte</span></div>
+      <div class="recipe-row" tabindex="0" aria-label="Gesundheit – horizontal scrollen">
+        <a class="recipe-card" href="frischkaese-selber-machen.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/frischkaese-selber-machen.png" alt="Frischkäse selber machen" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Frischkäse selber machen</span></a>
+        <a class="recipe-card" href="feta-art-selber-machen.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/feta-art-selber-machen.png" alt="Käse nach Feta-Art selber machen" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Käse nach Feta-Art selber machen</span></a>
+        <a class="recipe-card" href="mascarpone-selber-machen.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/mascarpone-selber-machen.png" alt="Mascarpone selber machen" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Mascarpone selber machen</span></a>
+        <a class="recipe-card" href="mozzarella-selber-machen.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/mozzarella-selber-machen.png" alt="Mozzarella selber machen" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Mozzarella selber machen</span></a>
+        <a class="recipe-card" href="paneer-selber-machen.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/paneer-selber-machen.png" alt="Paneer selber machen" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Paneer selber machen</span></a>
+        <a class="recipe-card" href="ricotta-selber-machen.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/ricotta-selber-machen.png" alt="Ricotta aus Vollmilch selber machen" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Ricotta aus Vollmilch selber machen</span></a>
+        <a class="recipe-card" href="wohltuendes-salz-fussbad.html"><span class="recipe-image"><span class="image-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/wohltuendes-salz-fussbad.png" alt="Wohltuendes Salz-Fußbad" loading="lazy" data-fallback-image><span class="ki">KI</span></span><span class="recipe-name">Wohltuendes Salz-Fußbad</span></a>
+      </div>
+    </section>
+</main>
+<footer class="footer container"><nav class="footer-links" aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="disclaimer.html">Disclaimer</a><a href="newsletter.html">Newsletter</a></nav><div>© Smart Health Living</div></footer>
+<script src="popup.js" data-delay="6000" defer></script>
+<script>
+document.querySelectorAll('img[data-fallback-image]').forEach(img=>{
+  img.addEventListener('error',()=>{
+    img.hidden=true;
+    const badge=img.parentElement.querySelector('.ki');
+    if(badge) badge.hidden=true;
+  });
+});
+</script>
+</body>
+</html>
