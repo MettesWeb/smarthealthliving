@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+<title>Smart Health Living | Rezepte, Gesundheit & Empfehlungen</title>
+<meta name="description" content="Smart Health Living verbindet einfache Rezepte, verständliches Gesundheitswissen, Darm & Verdauung, Detox, Meal Prep und ausgewählte Empfehlungen für deinen Alltag.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="author" content="Marit Silva Gebhardt">
+<meta name="theme-color" content="#fbfaf5">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Smart Health Living">
+<meta property="og:title" content="Smart Health Living">
+<meta property="og:description" content="Gesünder leben. Einfacher entscheiden. Rezepte, Gesundheitswissen und ausgewählte Empfehlungen.">
+<meta property="og:image" content="assets/index-hero-muesli-explosion.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Canonical ergänzen, sobald die endgültige Smart-Health-Living-Domain feststeht. -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Smart Health Living", "description": "Alltagstaugliche Rezepte, Gesundheitswissen und ausgewählte Empfehlungen für einen bewussteren Alltag."}</script>
+
+<style>
+:root {
+  --ink:#213126;
+  --muted:#68736b;
+  --green:#356c3e;
+  --green-dark:#285a32;
+  --sage:#eaf2e6;
+  --sage2:#dce9d7;
+  --cream:#fffaf0;
+  --peach:#fff1e9;
+  --blue:#eef7f6;
+  --gold:#fbf4dc;
+  --lav:#f5f0f8;
+  --paper:#fffefb;
+  --line:#dce6da;
+  --shadow:0 14px 36px rgba(45,74,49,.09);
+  --r:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{
+  margin:0;
+  overflow-x:hidden;
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 12% 5%, rgba(244,224,196,.16), transparent 28%),
+    linear-gradient(180deg,#fffefa 0%,#f7faf5 100%);
+  line-height:1.56;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button,input{font:inherit}
+.wrap{width:min(1280px,calc(100% - 24px));margin:auto}
+
+.site-head{
+  position:sticky;top:0;z-index:70;
+  background:rgba(255,255,252,.96);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line)
+}
+.head{
+  min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:8px 0
+}
+.brand{display:flex;flex-direction:column;line-height:1}
+.brand strong{font-size:1.08rem;color:#244d2d}
+.brand small{font-size:.61rem;color:#7a857c;margin-top:4px;letter-spacing:.025em}
+.top-cta{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:10px 14px;border-radius:999px;background:var(--green);
+  color:white;font-weight:850;font-size:.82rem;
+  box-shadow:0 9px 22px rgba(53,108,62,.18)
+}
+
+main{padding-bottom:36px}
+.card{
+  background:rgba(255,255,255,.97);
+  border:1px solid rgba(255,255,255,.99);
+  border-radius:var(--r);
+  box-shadow:var(--shadow)
+}
+.pad{padding:20px}
+h1,h2,h3{letter-spacing:-.035em}
+h1{font-size:clamp(2rem,6.5vw,4.1rem);line-height:.98;margin:11px 0}
+h2{font-size:clamp(1.45rem,3.5vw,2rem);line-height:1.08;margin:0 0 10px}
+h3{margin:0 0 6px}
+.muted{color:var(--muted)}
+.kicker{
+  display:inline-flex;padding:6px 10px;border-radius:999px;
+  background:var(--sage);color:#355a3d;font-size:.75rem;font-weight:850
+}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:11px 14px;border-radius:12px;border:0;
+  background:var(--green);color:white;font-weight:850;cursor:pointer
+}
+.btn.alt{background:white;color:var(--green);border:1px solid var(--green)}
+.image{position:relative;overflow:hidden}
+.image img{width:100%;height:100%;object-fit:cover}
+.ki{
+  position:absolute;right:7px;bottom:7px;z-index:3;
+  font-size:8px;font-weight:900;letter-spacing:.05em;
+  color:rgba(255,255,255,.95);background:rgba(0,0,0,.32);
+  padding:2px 5px;border-radius:999px
+}
+
+/* FULL-WIDTH, FLATTER SRL-STYLE HEADER */
+.hero-full{
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  position:relative;
+  min-height:395px;
+  overflow:hidden;
+  border-bottom:1px solid rgba(214,224,211,.75);
+}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:left center}
+.hero-fade{
+  position:absolute;inset:0;
+  background:linear-gradient(
+    90deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,.02) 42%,
+    rgba(255,255,255,.20) 54%,
+    rgba(255,255,255,.66) 68%,
+    rgba(255,255,255,.94) 83%,
+    rgba(255,255,255,.99) 100%
+  )
+}
+.hero-inner{
+  position:relative;z-index:2;
+  width:min(1280px,calc(100% - 24px));margin:auto;
+  min-height:395px;display:flex;justify-content:flex-end;align-items:center
+}
+.hero-copy{width:min(42%,540px);padding:26px 8px 26px 28px}
+.hero-copy p{color:#56645b;margin:.45rem 0 0;font-size:1rem}
+
+/* DESKTOP PORTAL LAYOUT */
+.portal{
+  width:min(1280px,calc(100% - 24px));
+  margin:18px auto 0;
+  display:grid;
+  grid-template-columns:230px minmax(0,1fr) 250px;
+  gap:18px;
+  align-items:start;
+}
+.detox-rail,.az-rail{position:sticky;top:86px}
+.detox-banner{
+  display:block;border-radius:20px;overflow:hidden;
+  box-shadow:var(--shadow);background:white;cursor:pointer
+}
+.detox-banner img{width:100%;height:auto}
+.detox-caption{
+  font-size:.68rem;color:#7c867d;text-align:center;margin-top:7px
+}
+
+.main-col{display:grid;gap:15px}
+.intro p{margin:.72rem 0;color:var(--muted)}
+.intro strong{color:#2c5235}
+
+.partner-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-top:13px}
+.partner{
+  border:1px solid var(--line);border-radius:17px;
+  padding:15px;background:white;display:flex;flex-direction:column;
+}
+.partner p{color:var(--muted);font-size:.9rem;margin:.3rem 0 .9rem;flex:1}
+.partner .micro{font-size:.66rem;color:#7d877f;margin-top:7px}
+.partner-note{
+  margin-top:13px;border:1px solid #eadfca;border-radius:16px;
+  padding:14px;background:var(--cream);color:#5f645d;font-size:.9rem
+}
+
+.topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.topic{
+  border:1px solid var(--line);border-radius:17px;padding:15px;
+  transition:.18s ease;background:white
+}
+.topic:nth-child(1){background:#f5f9f1}
+.topic:nth-child(2){background:#fff3e9}
+.topic:nth-child(3){background:#eef7f6}
+.topic:nth-child(4){background:#fbf4dc}
+.topic:nth-child(5){background:#f5f0f8}
+.topic:nth-child(6){background:#fff8f3}
+.topic:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(49,93,56,.08)}
+.topic p{margin:.28rem 0 0;color:var(--muted);font-size:.87rem}
+
+/* A-Z RECIPE RAIL */
+.az-card{padding:16px}
+.az-card h2{font-size:1.35rem}
+.az-card .introline{font-size:.82rem;color:var(--muted);margin:0 0 12px}
+.alphabet{
+  display:grid;grid-template-columns:repeat(6,1fr);
+  gap:7px;margin-bottom:12px
+}
+.letter{
+  width:100%;aspect-ratio:1;border-radius:50%;
+  border:1px solid #d8e3d5;background:#fafcf9;color:#99a29a;
+  font-weight:900;cursor:pointer;transition:.15s ease
+}
+.letter.has-content{
+  background:var(--green);border-color:var(--green);color:white;
+  box-shadow:0 4px 11px rgba(53,108,62,.20)
+}
+.letter.active{outline:3px solid rgba(76,128,85,.18);transform:translateY(-1px)}
+.recipe-list{
+  display:none;border-top:1px solid var(--line);
+  margin-top:8px;padding-top:6px;max-height:360px;overflow:auto
+}
+.recipe-list.open{display:block}
+.recipe-list a{
+  display:block;padding:10px 3px;border-bottom:1px solid #e5ece3;
+  font-weight:750;font-size:.9rem
+}
+.recipe-list a:last-child{border-bottom:0}
+.empty{color:var(--muted);font-size:.84rem;padding:10px 3px}
+
+.footer{
+  width:min(1280px,calc(100% - 24px));margin:22px auto 0;
+  padding:8px 0 42px;text-align:center;color:#7d877f;font-size:.7rem
+}
+.footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:11px;margin-bottom:6px}
+
+/* ONE UNIFIED NEWSLETTER POPUP */
+.popup{
+  position:fixed;inset:0;z-index:100;
+  background:rgba(17,27,19,.65);
+  display:none;align-items:center;justify-content:center;padding:14px
+}
+.popup.open{display:flex}
+.pop-card{
+  width:min(560px,100%);max-height:92vh;overflow:auto;
+  background:#fff;border-radius:25px;
+  box-shadow:0 30px 90px rgba(0,0,0,.30);
+  position:relative
+}
+.pop-close{
+  position:absolute;right:10px;top:10px;z-index:5;
+  width:36px;height:36px;border:0;border-radius:50%;
+  background:rgba(255,255,255,.94);font-size:20px;cursor:pointer
+}
+.pop-layout{display:grid;grid-template-columns:.82fr 1.18fr}
+.pop-image{height:auto;min-height:500px;background:#eef5eb}
+.pop-body{padding:27px}
+.pop-body p{color:var(--muted);margin:.45rem 0 1rem}
+.form{display:grid;gap:10px}
+.form input[type="email"]{
+  width:100%;padding:12px 13px;border:1px solid #cfdacf;
+  border-radius:11px;background:white
+}
+.optin{display:flex;gap:8px;align-items:flex-start;font-size:.77rem;color:#5f6c62}
+.small{font-size:.71rem;color:#7b857d}
+.success{
+  display:none;margin-top:11px;background:#edf7eb;
+  border:1px solid #cfe2cb;border-radius:13px;padding:12px
+}
+
+.mobile-detox{display:none}
+.mobile-az{display:none}
+
+@media(max-width:999px){
+  .wrap{width:min(920px,calc(100% - 20px))}
+  .hero-full{min-height:auto;margin-left:calc(50% - 50vw)}
+  .hero-bg{position:relative;height:300px}
+  .hero-bg img{object-position:35% center}
+  .hero-fade{
+    background:linear-gradient(180deg,rgba(255,255,255,0) 25%,rgba(255,255,255,.70) 72%,rgba(255,255,255,.98) 100%)
+  }
+  .hero-inner{min-height:0;display:block}
+  .hero-copy{width:auto;padding:18px 14px 22px;margin-top:-90px}
+  .hero-copy h1{font-size:clamp(2.1rem,10vw,3.5rem)}
+  .portal{display:block;width:min(920px,calc(100% - 20px));margin-top:14px}
+  .detox-rail,.az-rail{display:none}
+  .mobile-detox{display:block;margin-bottom:15px}
+  .mobile-detox .detox-banner{width:min(390px,100%);margin:auto}
+  .main-col{gap:14px}
+  .partner-grid{grid-template-columns:1fr}
+  .topic-grid{grid-template-columns:1fr 1fr}
+  .mobile-az{display:block;margin-top:15px}
+  .mobile-az .alphabet{grid-template-columns:repeat(6,1fr)}
+  .pop-layout{grid-template-columns:1fr}
+  .pop-image{height:250px;min-height:250px;max-height:250px}
+  .pop-body{padding:19px}
+}
+
+@media(max-width:620px){
+  .head{min-height:60px}
+  .brand strong{font-size:.98rem}
+  .brand small{font-size:.56rem}
+  .top-cta{font-size:.74rem;padding:9px 11px}
+  .hero-bg{height:260px}
+  .hero-copy{margin-top:-72px}
+  .topic-grid{grid-template-columns:1fr}
+  .alphabet{gap:6px}
+  .az-card{padding:15px}
+}
+
+.sr-only{
+  position:absolute!important;
+  width:1px!important;
+  height:1px!important;
+  padding:0!important;
+  margin:-1px!important;
+  overflow:hidden!important;
+  clip:rect(0,0,0,0)!important;
+  white-space:nowrap!important;
+  border:0!important;
+}
+.hero-final{
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  background:#fff;
+  overflow:hidden;
+  border-bottom:1px solid rgba(214,224,211,.75);
+}
+.hero-final-image{
+  width:100%;
+  background:#fff;
+}
+.hero-final-image img{
+  width:100%;
+  height:auto;
+  object-fit:cover;
+  object-position:center;
+}
+@media(min-width:1000px){
+  .hero-final-image img{
+    max-height:430px;
+    min-height:330px;
+    object-fit:cover;
+    object-position:center;
+  }
+}
+@media(max-width:999px){
+  .hero-final-image img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+  }
+}
+
+.gallery-preview{border-top:1px solid var(--line);margin-top:13px;padding-top:13px}.gallery-preview-title{display:flex;justify-content:space-between;gap:8px;align-items:baseline;margin-bottom:9px;color:var(--green-dark)}.gallery-preview-title strong{font-size:1rem}.gallery-preview-title span{font-size:.68rem;font-weight:800}.gallery-preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.gallery-preview-grid a{position:relative;display:grid;place-items:center;aspect-ratio:1;border-radius:9px;overflow:hidden;background:linear-gradient(145deg,#eaf2e5,#dbe8d5);color:var(--green-dark);text-align:center}.gallery-preview-grid img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover}.preview-placeholder{padding:7px;font-size:.64rem;font-weight:800;line-height:1.2}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap head">
+    <a class="brand" href="index.html">
+      <strong>Smart Health Living</strong>
+      <small>GESÜNDER. GLÜCKLICHER. DU.</small>
+    </a>
+    <a class="top-cta" href="https://vision.thegoodinside.com/shop/" target="_blank" rel="sponsored nofollow noopener">
+      🌿 Dein gesünderes Ich beginnt hier →
+    </a>
+  </div>
+</header>
+
+<main>
+
+  
+  <section class="hero-final" aria-label="Smart Health Living">
+    <h1 class="sr-only">Gesundheit bekommt hier die Aufmerksamkeit, die sie verdient.</h1>
+    <div class="image hero-final-image">
+      <img src="assets/index-header-final.png"
+           alt="Explodierende Müslischale mit Früchten vor Alpenkulisse – Smart Health Living">
+      <span class="ki">KI</span>
+    </div>
+  </section>
+
+
+  <div class="portal">
+
+    <!-- DESKTOP LEFT: DETOX BANNER -->
+    <aside class="detox-rail">
+      <button class="detox-banner image" type="button" onclick="openDetoxPopup()" aria-label="Kostenlosen 9-Wochen-Detox- und Energie-Plan sichern">
+        <img src="assets/detox-banner-vertical.png" alt="Kostenloser 9-Wochen-Detox- und Energie-Plan">
+        <span class="ki">KI</span>
+      </button>
+      <div class="detox-caption">Kostenloser Download · Newsletter-Anmeldung</div>
+    </aside>
+
+    <!-- CENTER CONTENT -->
+    <div class="main-col">
+
+      <!-- MOBILE DETOX BANNER -->
+      <section class="mobile-detox">
+        <button class="detox-banner image" type="button" onclick="openDetoxPopup()" aria-label="Kostenlosen 9-Wochen-Detox- und Energie-Plan sichern">
+          <img src="assets/detox-banner-vertical.png" alt="Kostenloser 9-Wochen-Detox- und Energie-Plan">
+          <span class="ki">KI</span>
+        </button>
+      </section>
+
+      <section class="card pad intro">
+        <span class="kicker">Na, da bist du ja endlich.</span>
+        <h2 style="margin-top:10px">Zeit, dass deine Gesundheit die Aufmerksamkeit bekommt, die sie verdient.</h2>
+
+        <p>Gesundheit begleitet mich schon seit vielen Jahren. Ich habe gelesen, verglichen, ausprobiert, auf anderen Kanälen mein Wissen geteilt und immer wieder nach Wegen gesucht, wie sich eine gesündere Lebensweise <strong>einfach, verständlich und wirklich alltagstauglich</strong> umsetzen lässt.</p>
+
+        <p>Mit <strong>Smart Health Living</strong> bündele ich dieses Wissen jetzt an einem Ort: mit unkomplizierten Rezepten, verständlich aufbereiteten Gesundheitsthemen und praktischen Ideen, die sich auch dann umsetzen lassen, wenn der Alltag voll ist. Du musst nicht von heute auf morgen alles verändern – oft reicht ein guter Startpunkt, eine neue Routine oder ein Rezept, das wirklich zu deinem Leben passt.</p>
+
+        <p>Über die Jahre habe ich außerdem Produkte für unterschiedliche Unternehmen getestet und mich mit vielen Marken beschäftigt. Dadurch weiß ich heute deutlich besser, worauf ich bei Qualität, Zusammensetzung, Alltagstauglichkeit und Transparenz achten möchte. Genau diese Erfahrung fließt auch in meine Empfehlungen hier auf der Seite ein.</p>
+      </section>
+
+      <section class="card pad">
+        <span class="kicker">Meine Premium-Empfehlungen</span>
+        <h2 style="margin-top:10px">Marken, die bei mir besonders weit oben stehen.</h2>
+
+        <p class="muted">Aus vielen Produkttests und Erfahrungen haben sich einige klare Favoriten herauskristallisiert. Diese Marken bilden meine Premium-Empfehlungen – trotzdem bleibt Smart Health Living bewusst offen für weitere gute Unternehmen.</p>
+
+        <div class="partner-grid">
+          <article class="partner">
+            <span class="kicker">Premium-Empfehlung</span>
+            <h3>Touchstone Essentials</h3>
+            <p>Mein großer Health-Store mit Produkten, die ich passend zu Rezepten und Gesundheitsroutinen verlinke.</p>
+            <a class="btn" href="https://vision.thegoodinside.com/shop/" target="_blank" rel="sponsored nofollow noopener">Zum Store →</a>
+            <div class="micro">Affiliate-Link</div>
+          </article>
+
+          <article class="partner">
+            <span class="kicker">Premium-Empfehlung</span>
+            <h3>Nature Elan</h3>
+            <p>Eine weitere Marke, die ich in meinen Health-Inhalten gezielt und thematisch passend berücksichtigen möchte.</p>
+            <a class="btn alt" href="#" onclick="return false">Link folgt →</a>
+          </article>
+
+          <article class="partner">
+            <span class="kicker">Premium-Empfehlung</span>
+            <h3>Empfehlung Nr. 3</h3>
+            <p>Hier kommt deine dritte feste Premium-Empfehlung hinein, sobald sie endgültig feststeht.</p>
+            <a class="btn alt" href="#" onclick="return false">Wird ergänzt →</a>
+          </article>
+        </div>
+
+        <div class="partner-note">
+          <strong>Nicht nur die Großen bekommen hier Raum.</strong> Ich möchte auch kleineren und spezialisierten Unternehmen Sichtbarkeit geben, wenn mich ihre Produkte überzeugen und sie sinnvoll zu unseren Themen passen. So bleibt Smart Health Living offen für neue Marken – ohne dass jede Empfehlung automatisch zur Premium-Empfehlung wird.
+          <div style="margin-top:10px">
+            <a href="https://www.amazon.de/shop/profile/amzn1.account.AFHO7YVP4O6ZRWOSQBHRGMFKRPLA" target="_blank" rel="sponsored nofollow noopener" style="font-weight:850;color:var(--green-dark)">Praktisches Zubehör findest du außerdem in meiner Amazon Storefront →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="card pad">
+        <h2>Themenwelten</h2>
+        <p class="muted">Hier wächst Smart Health Living Schritt für Schritt weiter.</p>
+
+        <div class="topic-grid">
+          <a class="topic" href="green-morning-drink.html"><h3>Rezepte & Drinks</h3><p>Smoothies, Drinks, schnelle Rezepte und neue Ideen.</p></a>
+          <a class="topic" href="#"><h3>Darm & Verdauung</h3><p>Darmgesundheit, Ernährung und alltagstaugliche Routinen.</p></a>
+          <a class="topic" href="#"><h3>Detox & Routinen</h3><p>Guides, Routinen und dein 9‑Wochen‑Detox‑ & Energie‑Plan.</p></a>
+          <a class="topic" href="#"><h3>Ernährung & Meal Prep</h3><p>Schnell vorbereitet und praktisch für volle Tage.</p></a>
+          <a class="topic" href="#"><h3>Gesundheitswissen</h3><p>Gesundheitsthemen verständlich und kompakt aufbereitet.</p></a>
+          <a class="topic" href="#"><h3>Produkte & Empfehlungen</h3><p>Stores, Zubehör und sorgfältig ausgewählte Produktempfehlungen.</p></a>
+        </div>
+      </section>
+
+      <!-- MOBILE A-Z -->
+      <section class="mobile-az" id="a-z">
+        <div class="card az-card">
+          <h2>Rezepte von A bis Z</h2>
+          <p class="introline">Grün markierte Buchstaben enthalten bereits Rezepte.</p>
+
+          <div class="alphabet">
+            <button class="letter has-content" data-letter="A">A</button><button class="letter has-content" data-letter="B">B</button><button class="letter has-content" data-letter="C">C</button><button class="letter" data-letter="D">D</button><button class="letter" data-letter="E">E</button><button class="letter has-content" data-letter="F">F</button><button class="letter has-content" data-letter="G">G</button><button class="letter has-content" data-letter="H">H</button><button class="letter" data-letter="I">I</button><button class="letter" data-letter="J">J</button><button class="letter has-content" data-letter="K">K</button><button class="letter has-content" data-letter="L">L</button><button class="letter has-content" data-letter="M">M</button><button class="letter has-content" data-letter="N">N</button><button class="letter has-content" data-letter="O">O</button><button class="letter has-content" data-letter="P">P</button><button class="letter" data-letter="Q">Q</button><button class="letter has-content" data-letter="R">R</button><button class="letter has-content" data-letter="S">S</button><button class="letter has-content" data-letter="T">T</button><button class="letter" data-letter="U">U</button><button class="letter" data-letter="V">V</button><button class="letter has-content" data-letter="W">W</button><button class="letter" data-letter="X">X</button><button class="letter" data-letter="Y">Y</button><button class="letter" data-letter="Z">Z</button>
+          </div>
+
+          <div class="recipe-list" data-list="A">
+            <a href="ananas-kokos-regenerationsdrink.html">Ananas-Kokos-Regenerationsdrink</a>
+            <a href="apfel-zimt-punsch-alkoholfrei.html">Apfel-Zimt-Punsch ohne Alkohol</a>
+            <a href="apfelkuchen-overnight-oats-zimt.html">Apfelkuchen-Overnight-Oats mit Zimt</a>
+          </div>
+          <div class="recipe-list" data-list="B">
+            <a href="bananen-haferplaetzchen-ohne-zucker.html">Bananen-Haferplätzchen ohne Zucker</a>
+          </div>
+          <div class="recipe-list" data-list="C">
+            <a href="chai-latte-ohne-fertigpulver.html">Chai Latte ohne Fertigpulver</a>
+          </div>
+          <div class="recipe-list" data-list="F">
+            <a href="frischkaese-selber-machen.html">Frischkäse selber machen</a>
+          </div>
+          <div class="recipe-list" data-list="G">
+            <a href="gemuese-muffins-brotdose.html">Gemüse-Muffins für die Brotdose</a>
+            <a href="golden-milk.html">Golden Milk</a>
+            <a href="grapefruit-kokos-reset.html">Grapefruit-Kokos-Reset</a>
+            <a href="green-morning-drink.html">Green Morning Drink</a>
+          </div>
+          <div class="recipe-list" data-list="H">
+            <a href="heisse-schokolade-mit-datteln.html">Heiße Schokolade mit Datteln</a>
+            <a href="high-protein-overnight-oats-quark.html">High-Protein-Overnight-Oats mit Quark</a>
+            <a href="huehnersuppe-mit-gemuese.html">Hühnersuppe mit Gemüse</a>
+          </div>
+          <div class="recipe-list" data-list="K">
+            <a href="kamille-honig-abenddrink.html">Kamille-Honig-Abenddrink</a>
+            <a href="karotten-ingwer-suppe.html">Karotten-Ingwer-Suppe</a>
+            <a href="kartoffel-lauch-pfanne.html">Kartoffel-Lauch-Pfanne</a>
+            <a href="feta-art-selber-machen.html">Käse nach Feta-Art selber machen</a>
+            <a href="kirsch-zimt-abenddrink.html">Kirsch-Zimt-Abenddrink</a>
+            <a href="kuerbis-latte-selber-machen.html">Kürbis-Latte zum Selbermachen</a>
+            <a href="kuerbis-overnight-oats-pumpkin-spice.html">Kürbis-Overnight-Oats (Pumpkin Spice)</a>
+            <a href="kuerbissuppe-kokosmilch-30-minuten.html">Kürbissuppe mit Kokosmilch</a>
+          </div>
+          <div class="recipe-list" data-list="L">
+            <a href="lebkuchen-overnight-oats.html">Lebkuchen-Overnight-Oats</a>
+          </div>
+          <div class="recipe-list" data-list="M">
+            <a href="mascarpone-selber-machen.html">Mascarpone selber machen</a>
+            <a href="mini-pfannkuchen-mit-obst.html">Mini-Pfannkuchen mit Obst</a>
+            <a href="mozzarella-selber-machen.html">Mozzarella selber machen</a>
+          </div>
+          <div class="recipe-list" data-list="N">
+            <a href="nudeln-versteckte-gemuesesosse.html">Nudeln mit versteckter Gemüsesoße</a>
+          </div>
+          <div class="recipe-list" data-list="O">
+            <a href="ofengemuese-mit-feta.html">Ofengemüse mit Feta</a>
+            <a href="one-pot-nudeln-20-minuten.html">One-Pot-Nudeln in 20 Minuten</a>
+            <a href="orangen-kokos-morgenmocktail.html">Orangen-Kokos-Morgenmocktail</a>
+          </div>
+          <div class="recipe-list" data-list="P">
+            <a href="paneer-selber-machen.html">Paneer selber machen</a>
+            <a href="pizza-schnecken-blaetterteig.html">Pizza-Schnecken mit Blätterteig</a>
+          </div>
+          <div class="recipe-list" data-list="R">
+            <a href="ricotta-selber-machen.html">Ricotta aus Vollmilch selber machen</a>
+            <a href="rote-bete-energy-juice.html">Rote-Bete-Energy-Juice</a>
+            <a href="rote-linsen-suppe.html">Rote-Linsen-Suppe</a>
+          </div>
+          <div class="recipe-list" data-list="S">
+            <a href="gemuesepfanne-reis-meal-prep.html">Schnelle Gemüsepfanne mit Reis</a>
+            <a href="schoko-bananen-overnight-oats.html">Schoko-Bananen-Overnight-Oats</a>
+            <a href="suesskartoffel-bowl.html">Süßkartoffel-Bowl</a>
+          </div>
+          <div class="recipe-list" data-list="T">
+            <a href="tomatensuppe-aus-dem-ofen.html">Tomatensuppe aus dem Ofen</a>
+          </div>
+          <div class="recipe-list" data-list="W">
+            <a href="wohltuendes-salz-fussbad.html">Wohltuendes Salz-Fußbad</a>
+          </div>
+          <div class="recipe-list" id="mobileEmpty"><div class="empty">Unter diesem Buchstaben sind aktuell noch keine Rezepte hinterlegt.</div></div>
+          <div class="gallery-preview"><a class="gallery-preview-title" href="rezepte-bildergalerie.html"><strong>Alle Rezepte ansehen</strong><span>Nach Themen entdecken →</span></a><div class="gallery-preview-grid"><a href="apfelkuchen-overnight-oats-zimt.html" aria-label="Apfelkuchen-Overnight-Oats mit Zimt"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/apfelkuchen-overnight-oats-zimt.png" alt="Apfelkuchen-Overnight-Oats mit Zimt" loading="lazy" data-fallback-image></a><a href="apfel-zimt-punsch-alkoholfrei.html" aria-label="Apfel-Zimt-Punsch ohne Alkohol"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/apfel-zimt-punsch-alkoholfrei.png" alt="Apfel-Zimt-Punsch ohne Alkohol" loading="lazy" data-fallback-image></a><a href="huehnersuppe-mit-gemuese.html" aria-label="Hühnersuppe mit Gemüse"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/huehnersuppe-mit-gemuese.png" alt="Hühnersuppe mit Gemüse" loading="lazy" data-fallback-image></a><a href="bananen-haferplaetzchen-ohne-zucker.html" aria-label="Bananen-Haferplätzchen ohne Zucker"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/bananen-haferplaetzchen-ohne-zucker.png" alt="Bananen-Haferplätzchen ohne Zucker" loading="lazy" data-fallback-image></a><a href="gemuesepfanne-reis-meal-prep.html" aria-label="Schnelle Gemüsepfanne mit Reis"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/gemuesepfanne-reis-meal-prep.png" alt="Schnelle Gemüsepfanne mit Reis" loading="lazy" data-fallback-image></a><a href="orangen-kokos-morgenmocktail.html" aria-label="Orangen-Kokos-Morgenmocktail"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/orangen-kokos-morgenmocktail.png" alt="Orangen-Kokos-Morgenmocktail" loading="lazy" data-fallback-image></a><a href="wohltuendes-salz-fussbad.html" aria-label="Wohltuendes Salz-Fußbad"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/wohltuendes-salz-fussbad.png" alt="Wohltuendes Salz-Fußbad" loading="lazy" data-fallback-image></a><a href="high-protein-overnight-oats-quark.html" aria-label="High-Protein-Overnight-Oats mit Quark"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/high-protein-overnight-oats-quark.png" alt="High-Protein-Overnight-Oats mit Quark" loading="lazy" data-fallback-image></a><a href="karotten-ingwer-suppe.html" aria-label="Karotten-Ingwer-Suppe"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/karotten-ingwer-suppe.png" alt="Karotten-Ingwer-Suppe" loading="lazy" data-fallback-image></a></div></div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- DESKTOP RIGHT: A-Z RECIPES ONLY -->
+    <aside class="az-rail" id="a-z">
+      <div class="card az-card">
+        <span class="kicker">Schnell finden</span>
+        <h2 style="margin-top:9px">Rezepte von A bis Z</h2>
+        <p class="introline">Grün markierte Buchstaben enthalten bereits Rezepte.</p>
+
+        <div class="alphabet" aria-label="Alphabetische Rezeptübersicht">
+            <button class="letter has-content" data-letter="A">A</button><button class="letter has-content" data-letter="B">B</button><button class="letter has-content" data-letter="C">C</button><button class="letter" data-letter="D">D</button><button class="letter" data-letter="E">E</button><button class="letter has-content" data-letter="F">F</button><button class="letter has-content" data-letter="G">G</button><button class="letter has-content" data-letter="H">H</button><button class="letter" data-letter="I">I</button><button class="letter" data-letter="J">J</button><button class="letter has-content" data-letter="K">K</button><button class="letter has-content" data-letter="L">L</button><button class="letter has-content" data-letter="M">M</button><button class="letter has-content" data-letter="N">N</button><button class="letter has-content" data-letter="O">O</button><button class="letter has-content" data-letter="P">P</button><button class="letter" data-letter="Q">Q</button><button class="letter has-content" data-letter="R">R</button><button class="letter has-content" data-letter="S">S</button><button class="letter has-content" data-letter="T">T</button><button class="letter" data-letter="U">U</button><button class="letter" data-letter="V">V</button><button class="letter has-content" data-letter="W">W</button><button class="letter" data-letter="X">X</button><button class="letter" data-letter="Y">Y</button><button class="letter" data-letter="Z">Z</button>
+          </div>
+
+          <div class="recipe-list" data-list="A">
+            <a href="ananas-kokos-regenerationsdrink.html">Ananas-Kokos-Regenerationsdrink</a>
+            <a href="apfel-zimt-punsch-alkoholfrei.html">Apfel-Zimt-Punsch ohne Alkohol</a>
+            <a href="apfelkuchen-overnight-oats-zimt.html">Apfelkuchen-Overnight-Oats mit Zimt</a>
+          </div>
+          <div class="recipe-list" data-list="B">
+            <a href="bananen-haferplaetzchen-ohne-zucker.html">Bananen-Haferplätzchen ohne Zucker</a>
+          </div>
+          <div class="recipe-list" data-list="C">
+            <a href="chai-latte-ohne-fertigpulver.html">Chai Latte ohne Fertigpulver</a>
+          </div>
+          <div class="recipe-list" data-list="F">
+            <a href="frischkaese-selber-machen.html">Frischkäse selber machen</a>
+          </div>
+          <div class="recipe-list" data-list="G">
+            <a href="gemuese-muffins-brotdose.html">Gemüse-Muffins für die Brotdose</a>
+            <a href="golden-milk.html">Golden Milk</a>
+            <a href="grapefruit-kokos-reset.html">Grapefruit-Kokos-Reset</a>
+            <a href="green-morning-drink.html">Green Morning Drink</a>
+          </div>
+          <div class="recipe-list" data-list="H">
+            <a href="heisse-schokolade-mit-datteln.html">Heiße Schokolade mit Datteln</a>
+            <a href="high-protein-overnight-oats-quark.html">High-Protein-Overnight-Oats mit Quark</a>
+            <a href="huehnersuppe-mit-gemuese.html">Hühnersuppe mit Gemüse</a>
+          </div>
+          <div class="recipe-list" data-list="K">
+            <a href="kamille-honig-abenddrink.html">Kamille-Honig-Abenddrink</a>
+            <a href="karotten-ingwer-suppe.html">Karotten-Ingwer-Suppe</a>
+            <a href="kartoffel-lauch-pfanne.html">Kartoffel-Lauch-Pfanne</a>
+            <a href="feta-art-selber-machen.html">Käse nach Feta-Art selber machen</a>
+            <a href="kirsch-zimt-abenddrink.html">Kirsch-Zimt-Abenddrink</a>
+            <a href="kuerbis-latte-selber-machen.html">Kürbis-Latte zum Selbermachen</a>
+            <a href="kuerbis-overnight-oats-pumpkin-spice.html">Kürbis-Overnight-Oats (Pumpkin Spice)</a>
+            <a href="kuerbissuppe-kokosmilch-30-minuten.html">Kürbissuppe mit Kokosmilch</a>
+          </div>
+          <div class="recipe-list" data-list="L">
+            <a href="lebkuchen-overnight-oats.html">Lebkuchen-Overnight-Oats</a>
+          </div>
+          <div class="recipe-list" data-list="M">
+            <a href="mascarpone-selber-machen.html">Mascarpone selber machen</a>
+            <a href="mini-pfannkuchen-mit-obst.html">Mini-Pfannkuchen mit Obst</a>
+            <a href="mozzarella-selber-machen.html">Mozzarella selber machen</a>
+          </div>
+          <div class="recipe-list" data-list="N">
+            <a href="nudeln-versteckte-gemuesesosse.html">Nudeln mit versteckter Gemüsesoße</a>
+          </div>
+          <div class="recipe-list" data-list="O">
+            <a href="ofengemuese-mit-feta.html">Ofengemüse mit Feta</a>
+            <a href="one-pot-nudeln-20-minuten.html">One-Pot-Nudeln in 20 Minuten</a>
+            <a href="orangen-kokos-morgenmocktail.html">Orangen-Kokos-Morgenmocktail</a>
+          </div>
+          <div class="recipe-list" data-list="P">
+            <a href="paneer-selber-machen.html">Paneer selber machen</a>
+            <a href="pizza-schnecken-blaetterteig.html">Pizza-Schnecken mit Blätterteig</a>
+          </div>
+          <div class="recipe-list" data-list="R">
+            <a href="ricotta-selber-machen.html">Ricotta aus Vollmilch selber machen</a>
+            <a href="rote-bete-energy-juice.html">Rote-Bete-Energy-Juice</a>
+            <a href="rote-linsen-suppe.html">Rote-Linsen-Suppe</a>
+          </div>
+          <div class="recipe-list" data-list="S">
+            <a href="gemuesepfanne-reis-meal-prep.html">Schnelle Gemüsepfanne mit Reis</a>
+            <a href="schoko-bananen-overnight-oats.html">Schoko-Bananen-Overnight-Oats</a>
+            <a href="suesskartoffel-bowl.html">Süßkartoffel-Bowl</a>
+          </div>
+          <div class="recipe-list" data-list="T">
+            <a href="tomatensuppe-aus-dem-ofen.html">Tomatensuppe aus dem Ofen</a>
+          </div>
+          <div class="recipe-list" data-list="W">
+            <a href="wohltuendes-salz-fussbad.html">Wohltuendes Salz-Fußbad</a>
+          </div>
+          <div class="recipe-list" id="desktopEmpty"><div class="empty">Unter diesem Buchstaben sind aktuell noch keine Rezepte hinterlegt.</div></div>
+          <div class="gallery-preview"><a class="gallery-preview-title" href="rezepte-bildergalerie.html"><strong>Alle Rezepte ansehen</strong><span>Nach Themen entdecken →</span></a><div class="gallery-preview-grid"><a href="apfelkuchen-overnight-oats-zimt.html" aria-label="Apfelkuchen-Overnight-Oats mit Zimt"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/apfelkuchen-overnight-oats-zimt.png" alt="Apfelkuchen-Overnight-Oats mit Zimt" loading="lazy" data-fallback-image></a><a href="apfel-zimt-punsch-alkoholfrei.html" aria-label="Apfel-Zimt-Punsch ohne Alkohol"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/apfel-zimt-punsch-alkoholfrei.png" alt="Apfel-Zimt-Punsch ohne Alkohol" loading="lazy" data-fallback-image></a><a href="huehnersuppe-mit-gemuese.html" aria-label="Hühnersuppe mit Gemüse"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/huehnersuppe-mit-gemuese.png" alt="Hühnersuppe mit Gemüse" loading="lazy" data-fallback-image></a><a href="bananen-haferplaetzchen-ohne-zucker.html" aria-label="Bananen-Haferplätzchen ohne Zucker"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/bananen-haferplaetzchen-ohne-zucker.png" alt="Bananen-Haferplätzchen ohne Zucker" loading="lazy" data-fallback-image></a><a href="gemuesepfanne-reis-meal-prep.html" aria-label="Schnelle Gemüsepfanne mit Reis"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/gemuesepfanne-reis-meal-prep.png" alt="Schnelle Gemüsepfanne mit Reis" loading="lazy" data-fallback-image></a><a href="orangen-kokos-morgenmocktail.html" aria-label="Orangen-Kokos-Morgenmocktail"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/orangen-kokos-morgenmocktail.png" alt="Orangen-Kokos-Morgenmocktail" loading="lazy" data-fallback-image></a><a href="wohltuendes-salz-fussbad.html" aria-label="Wohltuendes Salz-Fußbad"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/wohltuendes-salz-fussbad.png" alt="Wohltuendes Salz-Fußbad" loading="lazy" data-fallback-image></a><a href="high-protein-overnight-oats-quark.html" aria-label="High-Protein-Overnight-Oats mit Quark"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/high-protein-overnight-oats-quark.png" alt="High-Protein-Overnight-Oats mit Quark" loading="lazy" data-fallback-image></a><a href="karotten-ingwer-suppe.html" aria-label="Karotten-Ingwer-Suppe"><span class="preview-placeholder" aria-hidden="true">Bild folgt</span><img src="assets/karotten-ingwer-suppe.png" alt="Karotten-Ingwer-Suppe" loading="lazy" data-fallback-image></a></div></div>
+      </div>
+    </aside>
+
+  </div>
+
+</main>
+
+<footer class="footer">
+  <nav>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="newsletter.html">Newsletter</a>
+  </nav>
+  <div>© Smart Health Living</div>
+</footer>
+
+<script src="popup.js" data-delay="3000" defer></script>
+<script>
+/* A-Z: recipes only. The list opens directly below the circles. */
+function wireAlphabet(scope){
+  const buttons=[...scope.querySelectorAll('.letter')];
+  const lists=[...scope.querySelectorAll('.recipe-list[data-list]')];
+  const empty=scope.querySelector('[id$="Empty"]');
+
+  buttons.forEach(btn=>btn.addEventListener('click',()=>{
+    const letter=btn.dataset.letter;
+    const list=scope.querySelector(`.recipe-list[data-list="${letter}"]`);
+    const wasActive=btn.classList.contains('active');
+
+    buttons.forEach(b=>b.classList.remove('active'));
+    lists.forEach(l=>l.classList.remove('open'));
+    if(empty) empty.classList.remove('open');
+
+    if(wasActive) return;
+
+    btn.classList.add('active');
+    if(list){
+      list.classList.add('open');
+    }else if(empty){
+      empty.querySelector('.empty').textContent=`Unter ${letter} sind aktuell noch keine Rezepte hinterlegt.`;
+      empty.classList.add('open');
+    }
+  }));
+}
+
+document.querySelectorAll('.az-card').forEach(wireAlphabet);
+document.querySelectorAll('img[data-fallback-image]').forEach(img=>{
+  img.addEventListener('error',()=>{ img.hidden=true; });
+});
+</script>
+
+</body>
+</html>
+
