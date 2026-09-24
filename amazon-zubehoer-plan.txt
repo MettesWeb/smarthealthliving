@@ -1,0 +1,8 @@
+Overnight Oats → Overnight-Oats-/Schraubgläser
+Warme Drinks → Milchaufschäumer
+Suppen → Pürierstab
+Kinder-Rezepte → Brotdosen / Snackboxen
+Schnelle Rezepte für kühle Tage → Meal-Prep-Boxen / Ofenform
+
+Die HTML-Seiten lassen den bestehenden Amazon-Block bewusst unverändert.
+Bilder und konkrete Storefront-Produkte können später separat ergänzt werden.
