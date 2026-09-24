@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Alle Rezepte nach Themen | Smart Health Living</title>
 <meta name="description" content="Alle Rezepte von Smart Health Living nach Themen sortiert: Overnight Oats, warme Drinks, Suppen, Kinderrezepte, schnelle Gerichte, Cocktails und Gesundheit.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="Marit Silva Gebhardt">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alle Rezepte nach Themen | Smart Health Living">
+<meta property="og:description" content="Entdecke alle Rezepte nach Themen: Overnight Oats, warme Drinks, Suppen, Kinderrezepte, schnelle Gerichte, Cocktails und Gesundheit.">
+<meta property="og:image" content="assets/apfelkuchen-overnight-oats-zimt.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Alle Rezepte nach Themen","description":"Thematisch sortierte Rezeptübersicht von Smart Health Living.","isPartOf":{"@type":"WebSite","name":"Smart Health Living"}}</script>
 <link rel="stylesheet" href="styles.css">
 <style>
 html{scroll-behavior:smooth;scroll-padding-top:82px}
@@ -27,6 +35,7 @@ body{overflow-x:hidden}
 .recipe-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(44,75,49,.14)}
 .recipe-image{position:relative;display:grid;place-items:center;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(145deg,#eef5eb,#dce9d6);color:var(--green-dark)}
 .recipe-image img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover}
+.recipe-image img[hidden],.recipe-image .ki[hidden]{display:none!important}
 .image-placeholder{padding:16px;text-align:center;font-size:.88rem;font-weight:850}
 .recipe-image .ki{z-index:2}
 .recipe-name{padding:13px 14px 15px;color:var(--ink);font-family:Georgia,serif;font-size:1rem;font-weight:800;line-height:1.24}
@@ -131,11 +140,13 @@ body{overflow-x:hidden}
 <script src="popup.js" data-delay="6000" defer></script>
 <script>
 document.querySelectorAll('img[data-fallback-image]').forEach(img=>{
-  img.addEventListener('error',()=>{
+  const showPlaceholder=()=>{
     img.hidden=true;
     const badge=img.parentElement.querySelector('.ki');
     if(badge) badge.hidden=true;
-  });
+  };
+  if(img.complete && img.naturalWidth===0) showPlaceholder();
+  else img.addEventListener('error',showPlaceholder,{once:true});
 });
 </script>
 </body>

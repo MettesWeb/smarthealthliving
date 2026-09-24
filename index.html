@@ -342,7 +342,7 @@ h3{margin:0 0 6px}
   }
 }
 
-.gallery-preview{border-top:1px solid var(--line);margin-top:13px;padding-top:13px}.gallery-preview-title{display:flex;justify-content:space-between;gap:8px;align-items:baseline;margin-bottom:9px;color:var(--green-dark)}.gallery-preview-title strong{font-size:1rem}.gallery-preview-title span{font-size:.68rem;font-weight:800}.gallery-preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.gallery-preview-grid a{position:relative;display:grid;place-items:center;aspect-ratio:1;border-radius:9px;overflow:hidden;background:linear-gradient(145deg,#eaf2e5,#dbe8d5);color:var(--green-dark);text-align:center}.gallery-preview-grid img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover}.preview-placeholder{padding:7px;font-size:.64rem;font-weight:800;line-height:1.2}
+.gallery-preview{border-top:1px solid var(--line);margin-top:13px;padding-top:13px}.gallery-preview-title{display:flex;justify-content:space-between;gap:8px;align-items:baseline;margin-bottom:9px;color:var(--green-dark)}.gallery-preview-title strong{font-size:1rem}.gallery-preview-title span{font-size:.68rem;font-weight:800}.gallery-preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.gallery-preview-grid a{position:relative;display:grid;place-items:center;aspect-ratio:1;border-radius:9px;overflow:hidden;background:linear-gradient(145deg,#eaf2e5,#dbe8d5);color:var(--green-dark);text-align:center}.gallery-preview-grid img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover}.gallery-preview-grid img[hidden]{display:none!important}.preview-placeholder{padding:7px;font-size:.64rem;font-weight:800;line-height:1.2}
 </style>
 </head>
 <body>
@@ -677,7 +677,9 @@ function wireAlphabet(scope){
 
 document.querySelectorAll('.az-card').forEach(wireAlphabet);
 document.querySelectorAll('img[data-fallback-image]').forEach(img=>{
-  img.addEventListener('error',()=>{ img.hidden=true; });
+  const showPlaceholder=()=>{ img.hidden=true; };
+  if(img.complete && img.naturalWidth===0) showPlaceholder();
+  else img.addEventListener('error',showPlaceholder,{once:true});
 });
 </script>
 
