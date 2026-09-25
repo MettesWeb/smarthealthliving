@@ -154,3 +154,19 @@ h3{margin:0 0 8px}
   .pop-image{height:auto;min-height:560px}
   .pop-body{padding:27px}
 }
+@media(max-width:620px){
+  .popup{padding:8px}
+  .pop-card{width:calc(100vw - 16px);max-width:100%;max-height:calc(100dvh - 16px);overflow:auto;border-radius:18px}
+  .pop-image{height:150px;min-height:150px}
+  .pop-image img{object-position:center 18%}
+  .pop-close{right:8px;top:8px;width:32px;height:32px;font-size:18px}
+  .pop-body{padding:13px 14px 14px}
+  .pop-body .kicker{padding:4px 8px;font-size:.66rem}
+  .pop-body h2{font-size:clamp(1.35rem,7vw,1.7rem);line-height:1.08;margin:6px 0 0!important}
+  .pop-body p{font-size:.82rem;line-height:1.35;margin:.3rem 0 .65rem}
+  .form{gap:7px}
+  .form input[type="email"]{padding:10px 11px}
+  .optin{font-size:.68rem;line-height:1.35}
+  .pop-body .btn{padding:10px 11px;font-size:.82rem}
+  .pop-body .small{font-size:.63rem;line-height:1.3}
+}
