@@ -188,8 +188,9 @@ h3{margin:0 0 6px}
 .topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .topic{
   border:1px solid var(--line);border-radius:17px;padding:15px;
-  transition:.18s ease;background:white
+  transition:.18s ease;background:white;color:var(--ink);text-decoration:none
 }
+.topic[href]:hover,.topic[href]:focus-visible{transform:translateY(-3px);box-shadow:0 12px 28px rgba(44,75,49,.13);border-color:#b9d0b4}
 .topic:nth-child(1){background:#f5f9f1}
 .topic:nth-child(2){background:#fff3e9}
 .topic:nth-child(3){background:#eef7f6}
@@ -455,7 +456,7 @@ h3{margin:0 0 6px}
         <p class="muted">Hier wächst Smart Health Living Schritt für Schritt weiter.</p>
 
         <div class="topic-grid">
-          <div class="topic"><h3>Rezepte & Drinks</h3><p>Smoothies, Drinks, schnelle Rezepte und neue Ideen.</p></div>
+          <a class="topic" href="rezepte-bildergalerie.html"><h3>Rezepte & Drinks</h3><p>Alle Rezepte, neuen Serien und Themenwelten mit Bildern entdecken.</p></a>
           <div class="topic"><h3>Darm & Verdauung</h3><p>Darmgesundheit, Ernährung und alltagstaugliche Routinen.</p></div>
           <div class="topic"><h3>Detox & Routinen</h3><p>Guides, Routinen und dein 9‑Wochen‑Detox‑ & Energie‑Plan.</p></div>
           <div class="topic"><h3>Ernährung & Meal Prep</h3><p>Schnell vorbereitet und praktisch für volle Tage.</p></div>
@@ -471,7 +472,7 @@ h3{margin:0 0 6px}
           <p class="introline">Grün markierte Buchstaben enthalten bereits Rezepte.</p>
 
           <div class="alphabet">
-            <button class="letter has-content" data-letter="A">A</button><button class="letter has-content" data-letter="B">B</button><button class="letter has-content" data-letter="C">C</button><button class="letter" data-letter="D">D</button><button class="letter" data-letter="E">E</button><button class="letter has-content" data-letter="F">F</button><button class="letter has-content" data-letter="G">G</button><button class="letter has-content" data-letter="H">H</button><button class="letter" data-letter="I">I</button><button class="letter" data-letter="J">J</button><button class="letter has-content" data-letter="K">K</button><button class="letter has-content" data-letter="L">L</button><button class="letter has-content" data-letter="M">M</button><button class="letter has-content" data-letter="N">N</button><button class="letter has-content" data-letter="O">O</button><button class="letter has-content" data-letter="P">P</button><button class="letter" data-letter="Q">Q</button><button class="letter has-content" data-letter="R">R</button><button class="letter has-content" data-letter="S">S</button><button class="letter has-content" data-letter="T">T</button><button class="letter" data-letter="U">U</button><button class="letter" data-letter="V">V</button><button class="letter has-content" data-letter="W">W</button><button class="letter" data-letter="X">X</button><button class="letter" data-letter="Y">Y</button><button class="letter" data-letter="Z">Z</button>
+            <button class="letter has-content" data-letter="A">A</button><button class="letter has-content" data-letter="B">B</button><button class="letter has-content" data-letter="C">C</button><button class="letter has-content" data-letter="D">D</button><button class="letter has-content" data-letter="E">E</button><button class="letter has-content" data-letter="F">F</button><button class="letter has-content" data-letter="G">G</button><button class="letter has-content" data-letter="H">H</button><button class="letter" data-letter="I">I</button><button class="letter" data-letter="J">J</button><button class="letter has-content" data-letter="K">K</button><button class="letter has-content" data-letter="L">L</button><button class="letter has-content" data-letter="M">M</button><button class="letter has-content" data-letter="N">N</button><button class="letter has-content" data-letter="O">O</button><button class="letter has-content" data-letter="P">P</button><button class="letter" data-letter="Q">Q</button><button class="letter has-content" data-letter="R">R</button><button class="letter has-content" data-letter="S">S</button><button class="letter has-content" data-letter="T">T</button><button class="letter" data-letter="U">U</button><button class="letter" data-letter="V">V</button><button class="letter has-content" data-letter="W">W</button><button class="letter" data-letter="X">X</button><button class="letter" data-letter="Y">Y</button><button class="letter" data-letter="Z">Z</button>
           </div>
 
           <div class="recipe-list" data-list="A">
@@ -484,9 +485,20 @@ h3{margin:0 0 6px}
           </div>
           <div class="recipe-list" data-list="C">
             <a href="chai-latte-ohne-fertigpulver.html">Chai Latte ohne Fertigpulver</a>
+            <a href="cozy-herbst-winterdrinks.html">Cozy Herbst- &amp; Winterdrinks</a>
+          </div>
+          <div class="recipe-list" data-list="D">
+            <a href="dips-aufstriche-klassiker.html">Dips &amp; Aufstriche – Klassiker</a>
+          </div>
+          <div class="recipe-list" data-list="E">
+            <a href="eiskaffee-varianten.html">Eiskaffee-Varianten</a>
           </div>
           <div class="recipe-list" data-list="F">
+            <a href="familien-dips-kinder.html">Familien-Dips für Kinder</a>
+            <a href="fenchel-rezepte-selber-machen.html">Fenchel: 6 Ideen</a>
+            <a href="frischkaese-snack-happen.html">Frischkäse-Snack-Happen</a>
             <a href="frischkaese-selber-machen.html">Frischkäse selber machen</a>
+            <a href="fruchtige-mocktails.html">Fruchtige Mocktails</a>
           </div>
           <div class="recipe-list" data-list="G">
             <a href="gemuese-muffins-brotdose.html">Gemüse-Muffins für die Brotdose</a>
@@ -508,16 +520,19 @@ h3{margin:0 0 6px}
             <a href="kuerbis-latte-selber-machen.html">Kürbis-Latte zum Selbermachen</a>
             <a href="kuerbis-overnight-oats-pumpkin-spice.html">Kürbis-Overnight-Oats (Pumpkin Spice)</a>
             <a href="kuerbissuppe-kokosmilch-30-minuten.html">Kürbissuppe mit Kokosmilch</a>
+            <a href="kraeuter-selber-machen.html">Kräuter selber machen</a>
           </div>
           <div class="recipe-list" data-list="L">
             <a href="lebkuchen-overnight-oats.html">Lebkuchen-Overnight-Oats</a>
           </div>
           <div class="recipe-list" data-list="M">
             <a href="mascarpone-selber-machen.html">Mascarpone selber machen</a>
+            <a href="matcha-drinks-6-ideen.html">Matcha-Drinks</a>
             <a href="mini-pfannkuchen-mit-obst.html">Mini-Pfannkuchen mit Obst</a>
             <a href="mozzarella-selber-machen.html">Mozzarella selber machen</a>
           </div>
           <div class="recipe-list" data-list="N">
+            <a href="no-bake-snacks.html">No-Bake-Snacks</a>
             <a href="nudeln-versteckte-gemuesesosse.html">Nudeln mit versteckter Gemüsesoße</a>
           </div>
           <div class="recipe-list" data-list="O">
@@ -531,15 +546,19 @@ h3{margin:0 0 6px}
           </div>
           <div class="recipe-list" data-list="R">
             <a href="ricotta-selber-machen.html">Ricotta aus Vollmilch selber machen</a>
+            <a href="rosmarin-selber-machen.html">Rosmarin selber machen</a>
             <a href="rote-bete-energy-juice.html">Rote-Bete-Energy-Juice</a>
             <a href="rote-linsen-suppe.html">Rote-Linsen-Suppe</a>
           </div>
           <div class="recipe-list" data-list="S">
             <a href="gemuesepfanne-reis-meal-prep.html">Schnelle Gemüsepfanne mit Reis</a>
             <a href="schoko-bananen-overnight-oats.html">Schoko-Bananen-Overnight-Oats</a>
+            <a href="sparkling-tea-drinks.html">Sparkling-Tea-Drinks</a>
+            <a href="spicy-dips-aufstriche.html">Spicy Dips &amp; Aufstriche</a>
             <a href="suesskartoffel-bowl.html">Süßkartoffel-Bowl</a>
           </div>
           <div class="recipe-list" data-list="T">
+            <a href="thymian-selber-machen.html">Thymian selber machen</a>
             <a href="tomatensuppe-aus-dem-ofen.html">Tomatensuppe aus dem Ofen</a>
           </div>
           <div class="recipe-list" data-list="W">
@@ -560,7 +579,7 @@ h3{margin:0 0 6px}
         <p class="introline">Grün markierte Buchstaben enthalten bereits Rezepte.</p>
 
         <div class="alphabet" aria-label="Alphabetische Rezeptübersicht">
-            <button class="letter has-content" data-letter="A">A</button><button class="letter has-content" data-letter="B">B</button><button class="letter has-content" data-letter="C">C</button><button class="letter" data-letter="D">D</button><button class="letter" data-letter="E">E</button><button class="letter has-content" data-letter="F">F</button><button class="letter has-content" data-letter="G">G</button><button class="letter has-content" data-letter="H">H</button><button class="letter" data-letter="I">I</button><button class="letter" data-letter="J">J</button><button class="letter has-content" data-letter="K">K</button><button class="letter has-content" data-letter="L">L</button><button class="letter has-content" data-letter="M">M</button><button class="letter has-content" data-letter="N">N</button><button class="letter has-content" data-letter="O">O</button><button class="letter has-content" data-letter="P">P</button><button class="letter" data-letter="Q">Q</button><button class="letter has-content" data-letter="R">R</button><button class="letter has-content" data-letter="S">S</button><button class="letter has-content" data-letter="T">T</button><button class="letter" data-letter="U">U</button><button class="letter" data-letter="V">V</button><button class="letter has-content" data-letter="W">W</button><button class="letter" data-letter="X">X</button><button class="letter" data-letter="Y">Y</button><button class="letter" data-letter="Z">Z</button>
+            <button class="letter has-content" data-letter="A">A</button><button class="letter has-content" data-letter="B">B</button><button class="letter has-content" data-letter="C">C</button><button class="letter has-content" data-letter="D">D</button><button class="letter has-content" data-letter="E">E</button><button class="letter has-content" data-letter="F">F</button><button class="letter has-content" data-letter="G">G</button><button class="letter has-content" data-letter="H">H</button><button class="letter" data-letter="I">I</button><button class="letter" data-letter="J">J</button><button class="letter has-content" data-letter="K">K</button><button class="letter has-content" data-letter="L">L</button><button class="letter has-content" data-letter="M">M</button><button class="letter has-content" data-letter="N">N</button><button class="letter has-content" data-letter="O">O</button><button class="letter has-content" data-letter="P">P</button><button class="letter" data-letter="Q">Q</button><button class="letter has-content" data-letter="R">R</button><button class="letter has-content" data-letter="S">S</button><button class="letter has-content" data-letter="T">T</button><button class="letter" data-letter="U">U</button><button class="letter" data-letter="V">V</button><button class="letter has-content" data-letter="W">W</button><button class="letter" data-letter="X">X</button><button class="letter" data-letter="Y">Y</button><button class="letter" data-letter="Z">Z</button>
           </div>
 
           <div class="recipe-list" data-list="A">
@@ -573,9 +592,20 @@ h3{margin:0 0 6px}
           </div>
           <div class="recipe-list" data-list="C">
             <a href="chai-latte-ohne-fertigpulver.html">Chai Latte ohne Fertigpulver</a>
+            <a href="cozy-herbst-winterdrinks.html">Cozy Herbst- &amp; Winterdrinks</a>
+          </div>
+          <div class="recipe-list" data-list="D">
+            <a href="dips-aufstriche-klassiker.html">Dips &amp; Aufstriche – Klassiker</a>
+          </div>
+          <div class="recipe-list" data-list="E">
+            <a href="eiskaffee-varianten.html">Eiskaffee-Varianten</a>
           </div>
           <div class="recipe-list" data-list="F">
+            <a href="familien-dips-kinder.html">Familien-Dips für Kinder</a>
+            <a href="fenchel-rezepte-selber-machen.html">Fenchel: 6 Ideen</a>
+            <a href="frischkaese-snack-happen.html">Frischkäse-Snack-Happen</a>
             <a href="frischkaese-selber-machen.html">Frischkäse selber machen</a>
+            <a href="fruchtige-mocktails.html">Fruchtige Mocktails</a>
           </div>
           <div class="recipe-list" data-list="G">
             <a href="gemuese-muffins-brotdose.html">Gemüse-Muffins für die Brotdose</a>
@@ -597,16 +627,19 @@ h3{margin:0 0 6px}
             <a href="kuerbis-latte-selber-machen.html">Kürbis-Latte zum Selbermachen</a>
             <a href="kuerbis-overnight-oats-pumpkin-spice.html">Kürbis-Overnight-Oats (Pumpkin Spice)</a>
             <a href="kuerbissuppe-kokosmilch-30-minuten.html">Kürbissuppe mit Kokosmilch</a>
+            <a href="kraeuter-selber-machen.html">Kräuter selber machen</a>
           </div>
           <div class="recipe-list" data-list="L">
             <a href="lebkuchen-overnight-oats.html">Lebkuchen-Overnight-Oats</a>
           </div>
           <div class="recipe-list" data-list="M">
             <a href="mascarpone-selber-machen.html">Mascarpone selber machen</a>
+            <a href="matcha-drinks-6-ideen.html">Matcha-Drinks</a>
             <a href="mini-pfannkuchen-mit-obst.html">Mini-Pfannkuchen mit Obst</a>
             <a href="mozzarella-selber-machen.html">Mozzarella selber machen</a>
           </div>
           <div class="recipe-list" data-list="N">
+            <a href="no-bake-snacks.html">No-Bake-Snacks</a>
             <a href="nudeln-versteckte-gemuesesosse.html">Nudeln mit versteckter Gemüsesoße</a>
           </div>
           <div class="recipe-list" data-list="O">
@@ -620,15 +653,19 @@ h3{margin:0 0 6px}
           </div>
           <div class="recipe-list" data-list="R">
             <a href="ricotta-selber-machen.html">Ricotta aus Vollmilch selber machen</a>
+            <a href="rosmarin-selber-machen.html">Rosmarin selber machen</a>
             <a href="rote-bete-energy-juice.html">Rote-Bete-Energy-Juice</a>
             <a href="rote-linsen-suppe.html">Rote-Linsen-Suppe</a>
           </div>
           <div class="recipe-list" data-list="S">
             <a href="gemuesepfanne-reis-meal-prep.html">Schnelle Gemüsepfanne mit Reis</a>
             <a href="schoko-bananen-overnight-oats.html">Schoko-Bananen-Overnight-Oats</a>
+            <a href="sparkling-tea-drinks.html">Sparkling-Tea-Drinks</a>
+            <a href="spicy-dips-aufstriche.html">Spicy Dips &amp; Aufstriche</a>
             <a href="suesskartoffel-bowl.html">Süßkartoffel-Bowl</a>
           </div>
           <div class="recipe-list" data-list="T">
+            <a href="thymian-selber-machen.html">Thymian selber machen</a>
             <a href="tomatensuppe-aus-dem-ofen.html">Tomatensuppe aus dem Ofen</a>
           </div>
           <div class="recipe-list" data-list="W">
