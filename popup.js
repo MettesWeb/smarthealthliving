@@ -12,7 +12,7 @@
     <button class="pop-close" type="button" aria-label="Schließen">×</button>
     <div class="pop-layout">
       <div class="pop-image image">
-        <img src="assets/energieplan-frau-portrait.png" alt="Smart Health Living 9-Wochen-Detox- und Energieplan">
+        <img src="assets/energieplan-frau-portrait.webp" alt="Smart Health Living 9-Wochen-Detox- und Energieplan">
         <span class="ki">KI</span>
       </div>
       <div class="pop-body">
