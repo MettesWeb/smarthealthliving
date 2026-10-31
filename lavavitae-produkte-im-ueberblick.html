@@ -34,10 +34,11 @@
     .article-hero>*{min-width:0}
     .article-hero h1{overflow-wrap:anywhere;hyphens:auto}
     .article-hero .image{min-height:260px;aspect-ratio:16/10}
-    .article-hero .copy{padding:clamp(22px,5vw,48px)}
+    .article-hero .copy{position:relative;padding:clamp(38px,5vw,48px) clamp(22px,5vw,48px) clamp(22px,5vw,48px)}
     .article-hero .copy p{max-width:720px}
     .eyebrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
     .ad-label{display:inline-flex;padding:6px 10px;border-radius:999px;background:#fff5dc;border:1px solid #efd69d;color:#664c18;font-weight:800;font-size:.73rem}
+    .ad-corner{position:absolute;top:14px;left:18px;color:#9aa39b;font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
     .lead{font-size:clamp(1.04rem,2.2vw,1.2rem);line-height:1.62}
     .affiliate-note{border-left:4px solid #d9a635;background:#fffaf0;padding:14px 16px;border-radius:0 14px 14px 0;color:#5e553f;font-size:.9rem}
     .article-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
@@ -63,8 +64,9 @@
     .meta-line{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:.8rem;margin-top:18px}
     .inline-link{color:#285d34;font-weight:800;text-decoration:underline;text-underline-offset:3px}
     @media(max-width:559px){.article-hero .copy{padding:22px}.article-hero h1{font-size:2.25rem}.cta-row .btn{width:100%;min-height:48px}.top-cta{font-size:0;width:43px;height:43px;padding:0}.top-cta::before{content:"🌿";font-size:18px}.compare-wrap{margin-inline:-2px}}
-    @media(min-width:620px){.intro-grid,.world-grid,.choice-grid,.faq-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.fact-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-    @media(min-width:860px){.article-hero{grid-template-columns:1.05fr .95fr}.article-hero .image{min-height:520px;aspect-ratio:auto}.article-grid{grid-template-columns:230px minmax(0,1fr);align-items:start}.toc{position:sticky;top:90px}.choice-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.choice-card:nth-child(4),.choice-card:nth-child(5){grid-column:span 1}}
+    @media(min-width:620px){.intro-grid,.world-grid,.faq-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.fact-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(min-width:760px){.choice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(min-width:860px){.article-hero{grid-template-columns:1.05fr .95fr}.article-hero .image{min-height:520px;aspect-ratio:auto}.article-grid{grid-template-columns:230px minmax(0,1fr);align-items:start}.toc{position:sticky;top:90px}}
   </style>
   <script type="application/ld+json">
   {
@@ -98,7 +100,6 @@
           {"@type":"Question","name":"Was ist der Unterschied zwischen LAVA und VITA?","acceptedAnswer":{"@type":"Answer","text":"Unter LAVA bündelt LavaVitae vor allem Produkte rund um das vulkanische Mineral Klinoptilolith sowie Anwendungen für Haut, Zähne, Bad und Alltag. Die VITA-Linie umfasst Nahrungsergänzungen mit unterschiedlichen Nährstoff- und Pflanzenkombinationen."}},
           {"@type":"Question","name":"Ersetzen LavaVitae-Produkte eine ausgewogene Ernährung?","acceptedAnswer":{"@type":"Answer","text":"Nein. Nahrungsergänzungsmittel ersetzen keine abwechslungsreiche, ausgewogene Ernährung und keine gesunde Lebensweise."}},
           {"@type":"Question","name":"Kann ich mehrere Produkte gleichzeitig kombinieren?","acceptedAnswer":{"@type":"Answer","text":"Das lässt sich nicht pauschal beantworten. Prüfe Zutaten, Nährstoffmengen und Warnhinweise. Bei Medikamenten, Erkrankungen, Schwangerschaft oder Stillzeit sollte die Kombination vorab fachlich geklärt werden."}},
-          {"@type":"Question","name":"Kostet der Einkauf über den Affiliate-Link mehr?","acceptedAnswer":{"@type":"Answer","text":"Der Preis erhöht sich durch den Affiliate-Link nicht. Smart Health Living kann bei einem qualifizierten Kauf eine Provision erhalten."}},
           {"@type":"Question","name":"Wo finde ich die aktuellen Zutaten und Verzehrempfehlungen?","acceptedAnswer":{"@type":"Answer","text":"Maßgeblich sind immer die aktuelle Produktseite und die Angaben auf der Verpackung. Rezepturen und Hinweise können sich ändern."}}
         ]
       }
@@ -127,21 +128,14 @@
             <img src="assets/lavavitae-offiziell-produktpalette.jpg" width="1920" height="1080" alt="Offizielle LavaVitae-Produktpalette mit Produkten der LAVA- und VITA-Linie" fetchpriority="high" decoding="sync">
           </div>
           <div class="copy">
-            <div class="eyebrow"><span class="kicker">Markencheck</span><span class="ad-label">Werbung · Affiliate-Partner</span></div>
+            <span class="ad-corner">Werbung</span>
             <h1 id="seitentitel">LavaVitae-Produkte im Überblick</h1>
             <p class="lead">Mineralische Anwendungen, Greens, Darm-Routinen und ausgewählte Mikronährstoffe: Hier findest du eine verständliche Orientierung, bevor du dich durch das große Sortiment klickst.</p>
             <div class="cta-row">
               <a class="btn" href="https://smarthealthliving.lvpartner.com" target="_blank" rel="sponsored nofollow noopener noreferrer">LavaVitae entdecken →</a>
               <a class="btn alt" href="#auswahl">Erst Auswahlhilfe lesen</a>
             </div>
-            <div class="meta-line"><span>Von Marit Silva Gebhardt</span><span>Aktualisiert: 30. Oktober 2026</span><span>Lesezeit: ca. 10 Minuten</span></div>
           </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="card pad affiliate-note" role="note">
-          <strong>Transparenz:</strong> Dieser Beitrag enthält Affiliate-Links. Wenn du darüber einkaufst, kann Smart Health Living eine Provision erhalten. Für dich wird der Einkauf dadurch nicht teurer. Inhaltliche Einordnung und Sicherheitshinweise bleiben davon unabhängig.
         </div>
       </section>
 
@@ -164,7 +158,7 @@
           <article class="article-body">
             <section id="marke" aria-labelledby="marke-titel">
               <h2 id="marke-titel">Was ist LavaVitae?</h2>
-              <div style="display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:0 0 14px" aria-label="Offizieller LavaVitae Affiliate-Partner"><img src="assets/lavavitae-offiziell-partnerlogo.png" width="4167" height="4167" alt="LavaVitae Partner" style="width:110px;height:110px;object-fit:contain"><span class="small-note">Offizieller Affiliate-Partner</span></div>
+              <div style="display:flex;justify-content:center;margin:0 0 14px" aria-label="LavaVitae"><img src="assets/lavavitae-offiziell-partnerlogo.png" width="4167" height="4167" alt="LavaVitae Logo" style="width:120px;height:120px;object-fit:contain"></div>
               <p>LavaVitae ist ein österreichisches Familienunternehmen mit Sitz in Fürnitz. Nach Angaben des Unternehmens wurde die Marke 2013 von Manfred Scherzer gegründet; seit 2024 gehört auch Julian Raupl zur Geschäftsführung. Das Sortiment verbindet mineralische Anwendungen unter dem Namen <strong>LAVA</strong> mit Nahrungsergänzungen der Linie <strong>VITA</strong>.</p>
               <p>Die Bandbreite ist groß – und genau deshalb lohnt es sich, nicht einfach „irgendetwas für die Gesundheit“ zu bestellen. Sinnvoller ist die Frage: <strong>Welche Routine möchte ich überhaupt unterstützen, welche Inhaltsstoffe sind enthalten und passt das Produkt zu meiner persönlichen Situation?</strong></p>
               <div class="intro-grid" style="margin-top:16px">
@@ -204,11 +198,11 @@
               <h2 id="auswahl-titel">Fünf sinnvolle Einstiege in das Sortiment</h2>
               <p>Diese Übersicht ist keine persönliche Einnahmeempfehlung. Sie hilft dir, die Produktgruppen vor dem Kauf schneller einzuordnen.</p>
               <div class="choice-grid">
-                <div class="mini-card choice-card"><span class="number">1</span><h3>VITA GREEN</h3><p>Für Menschen, die eine Greens-Mischung unkompliziert in Wasser oder Saft einrühren möchten.</p><p class="muted"><strong>Prüfen:</strong> Weizengras, Sulfite, zugesetzte Vitamine und individuelle Verträglichkeit.</p><a class="more" href="lavavitae-vita-green.html">VITA GREEN genauer ansehen →</a></div>
-                <div class="mini-card choice-card"><span class="number">2</span><h3>VITA SYMBIO &amp; PROBIO</h3><p>Produkte, die sich thematisch um Darm-Routine und ausgewählte Mikroorganismen beziehungsweise Nährstoffe drehen.</p><p class="muted"><strong>Prüfen:</strong> genaue Stämme, Mengen, Lagerung und persönliche Ausgangslage.</p><a class="more" href="lavavitae-vita-symbio-probio.html">SYMBIO &amp; PROBIO vergleichen →</a></div>
-                <div class="mini-card choice-card"><span class="number">3</span><h3>Magnesium</h3><p>Mit Varianten wie RELAX oder SPORT lässt sich die Auswahl stärker an Tageszeit und Routine orientieren.</p><p class="muted"><strong>Prüfen:</strong> Magnesiumverbindung, Tagesmenge und bereits verwendete Präparate.</p><a class="more" href="lavavitae-magnesium-relax-sport.html">Magnesiumvarianten vergleichen →</a></div>
-                <div class="mini-card choice-card"><span class="number">4</span><h3>Omega-3</h3><p>Im Sortiment gibt es klassische und vegane Optionen. Das macht die Ernährungsform zu einem guten ersten Filter.</p><p class="muted"><strong>Prüfen:</strong> Quelle, EPA-/DHA-Mengen, Oxidationsschutz und Medikamente.</p><a class="more" href="lavavitae-omega-3-fisch-vegan.html">Fisch- und Algenöl vergleichen →</a></div>
-                <div class="mini-card choice-card"><span class="number">5</span><h3>LAVA PURE</h3><p>Für Interessierte an einem Klinoptilolith-Medizinprodukt – mit deutlich mehr Sorgfalt als bei einem normalen Lebensmittel.</p><p class="muted"><strong>Prüfen:</strong> Gebrauchsanweisung, Abstand zu Arzneimitteln, Trinkmenge und ärztliche Rücksprache.</p><a class="more" href="lavavitae-lava-pure.html">LAVA PURE sachlich erklärt →</a></div>
+                <div class="mini-card choice-card"><span class="number">1</span><h3>VITA GREEN</h3><p>Eine Greens-Mischung mit Pflanzenzutaten, Vitaminen und Enzymkomplex zum Einrühren in Wasser oder Saft.</p><a class="more" href="lavavitae-vita-green.html">VITA GREEN genauer ansehen →</a></div>
+                <div class="mini-card choice-card"><span class="number">2</span><h3>VITA SYMBIO &amp; PROBIO</h3><p>Mikronährstoffe in Kapselform treffen auf ein Multispezies-Probiotikum für eine kombinierte Darm-Routine.</p><a class="more" href="lavavitae-vita-symbio-probio.html">SYMBIO &amp; PROBIO vergleichen →</a></div>
+                <div class="mini-card choice-card"><span class="number">3</span><h3>Magnesium</h3><p>RELAX kombiniert drei Magnesiumverbindungen, SPORT liefert Magnesiumcitrat in praktischen Sticks.</p><a class="more" href="lavavitae-magnesium-relax-sport.html">Magnesiumvarianten vergleichen →</a></div>
+                <div class="mini-card choice-card"><span class="number">4</span><h3>Omega-3</h3><p>VITA OMEGA bietet Fischölkapseln, VITA OMEGA VEGAN eine flüssige Alternative aus Algenöl.</p><a class="more" href="lavavitae-omega-3-fisch-vegan.html">Fisch- und Algenöl vergleichen →</a></div>
+                <div class="mini-card choice-card"><span class="number">5</span><h3>LAVA PURE</h3><p>Ein CE-zertifiziertes Medizinprodukt mit Zeolith-Klinoptilolith als Pulver oder Kapseln.</p><a class="more" href="lavavitae-lava-pure.html">LAVA PURE genauer ansehen →</a></div>
               </div>
             </section>
 
@@ -226,7 +220,6 @@
                   </tbody>
                 </table>
               </div>
-              <p class="small">Auf kleinen Bildschirmen kann die Tabelle seitlich verschoben werden. Alle wesentlichen Informationen stehen zusätzlich in den Abschnitten darüber.</p>
             </section>
 
             <section id="qualitaet" aria-labelledby="qualitaet-titel" style="margin-top:34px">
@@ -272,14 +265,12 @@
 
       <section aria-label="LavaVitae Produktauswahl">
         <div class="cta-panel">
-          <span class="ad-label">Affiliate-Link</span>
-          <h2 style="margin-top:14px">Bereit, die LavaVitae-Produktwelt selbst anzusehen?</h2>
-          <p>Vergleiche die aktuellen Produkte, Zutaten, Packungsgrößen und Herstellerhinweise in Ruhe. Der Link führt dich zur Affiliate-Seite unseres Partners.</p>
+          <h2>Bereit, die LavaVitae-Produktwelt selbst anzusehen?</h2>
+          <p>Vergleiche die aktuellen Produkte, Zutaten, Packungsgrößen und Herstellerhinweise direkt bei LavaVitae.</p>
           <div class="cta-row">
             <a class="btn" href="https://smarthealthliving.lvpartner.com" target="_blank" rel="sponsored nofollow noopener noreferrer">Zu LavaVitae →</a>
             <a class="btn alt" href="#sicherheit">Sicherheitshinweise prüfen</a>
           </div>
-          <p class="small" style="color:#dfeade;margin-bottom:0">Werbung · Bei einem qualifizierten Kauf kann Smart Health Living eine Provision erhalten. Für dich entstehen dadurch keine zusätzlichen Kosten.</p>
         </div>
       </section>
 
@@ -290,7 +281,6 @@
             <div class="faq-item"><h3>Was ist der Unterschied zwischen LAVA und VITA?</h3><p>Unter LAVA bündelt die Marke vor allem mineralische und äußerliche Anwendungen. VITA umfasst Nahrungsergänzungen mit unterschiedlichen Nährstoff- und Pflanzenkombinationen.</p></div>
             <div class="faq-item"><h3>Ersetzen die Produkte eine ausgewogene Ernährung?</h3><p>Nein. Nahrungsergänzungsmittel ersetzen keine abwechslungsreiche, ausgewogene Ernährung und keine gesunde Lebensweise.</p></div>
             <div class="faq-item"><h3>Kann ich mehrere Produkte kombinieren?</h3><p>Nicht pauschal. Prüfe Überschneidungen bei Nährstoffen und Warnhinweise. Bei Medikamenten, Erkrankungen, Schwangerschaft oder Stillzeit bitte vorab fachlich abklären.</p></div>
-            <div class="faq-item"><h3>Kostet der Affiliate-Link mehr?</h3><p>Nein. Für dich erhöht sich der Preis dadurch nicht. Smart Health Living kann bei einem qualifizierten Kauf eine Provision erhalten.</p></div>
             <div class="faq-item"><h3>Wo stehen die aktuellen Zutaten?</h3><p>Maßgeblich sind immer die aktuelle Produktseite und die Angaben auf der Verpackung, da sich Rezepturen und Hinweise ändern können.</p></div>
           </div>
         </div>
@@ -321,7 +311,7 @@
     <nav class="footer-links" aria-label="Rechtliches">
       <a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="disclaimer.html">Disclaimer</a><a href="newsletter.html">Newsletter</a>
     </nav>
-    <div>© Smart Health Living · Affiliate-Links und Werbung werden dezent direkt am jeweiligen Inhalt gekennzeichnet.</div>
+    <div>© Smart Health Living · Werbung wird direkt am jeweiligen Inhalt gekennzeichnet.</div>
   </footer>
   <script src="popup.js" data-delay="6000" defer></script>
 </body>
