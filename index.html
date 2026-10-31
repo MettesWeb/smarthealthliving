@@ -307,7 +307,8 @@ h3{margin:0 0 6px}
   .head{min-height:60px}
   .brand strong{font-size:.98rem}
   .brand small{font-size:.56rem}
-  .top-cta{font-size:.74rem;padding:9px 11px}
+  .top-cta{font-size:0;width:43px;height:43px;padding:0;flex:0 0 43px;overflow:hidden;white-space:nowrap}
+  .top-cta::before{content:"🌿";font-size:18px}
   .hero-bg{height:260px}
   .hero-copy{margin-top:-72px}
   .topic-grid{grid-template-columns:1fr}
@@ -408,7 +409,7 @@ h3{margin:0 0 6px}
       <!-- MOBILE DETOX BANNER -->
       <section class="mobile-detox">
         <button class="detox-banner image" type="button" onclick="openDetoxPopup()" aria-label="Kostenlosen 9-Wochen-Detox- und Energie-Plan sichern">
-          <img src="assets/detox-banner-vertical.png" alt="Kostenloser 9-Wochen-Detox- und Energie-Plan">
+          <img src="assets/detox-banner-9wochen.png" alt="Kostenloser 9-Wochen-Detox- und Energie-Plan">
           <span class="ki">KI</span>
         </button>
       </section>
@@ -443,6 +444,13 @@ h3{margin:0 0 6px}
             <p>Eine weitere Marke, die ich in meinen Health-Inhalten gezielt und thematisch passend berücksichtigen möchte.</p>
             <a class="btn alt" href="#" onclick="return false">Link folgt →</a>
           </article>
+
+          <article class="partner">
+            <h3>LavaVitae</h3>
+            <p>Mineralische Anwendungen, Greens und ausgewählte Mikronährstoffe verständlich eingeordnet.</p>
+            <a class="btn" href="lavavitae-produkte-im-ueberblick.html">LavaVitae entdecken →</a>
+            <div class="micro">Werbung · Affiliate-Link</div>
+          </article>
         </div>
 
         <a class="amazon-banner" href="https://www.amazon.de/shop/profile/amzn1.account.AFHO7YVP4O6ZRWOSQBHRGMFKRPLA" target="_blank" rel="sponsored nofollow noopener">
@@ -461,7 +469,7 @@ h3{margin:0 0 6px}
           <div class="topic"><h3>Detox & Routinen</h3><p>Guides, Routinen und dein 9‑Wochen‑Detox‑ & Energie‑Plan.</p></div>
           <div class="topic"><h3>Ernährung & Meal Prep</h3><p>Schnell vorbereitet und praktisch für volle Tage.</p></div>
           <div class="topic"><h3>Gesundheitswissen</h3><p>Gesundheitsthemen verständlich und kompakt aufbereitet.</p></div>
-          <div class="topic"><h3>Produkte & Empfehlungen</h3><p>Stores, Zubehör und sorgfältig ausgewählte Produktempfehlungen.</p></div>
+          <div class="topic"><h3>Produkte & Empfehlungen</h3><p>LavaVitae, Stores, Zubehör und sorgfältig ausgewählte Produktempfehlungen.</p></div>
         </div>
       </section>
 
