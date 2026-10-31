@@ -154,3 +154,7 @@ h3{margin:0 0 8px}
   .pop-image{height:auto;min-height:560px}
   .pop-body{padding:27px}
 }
+
+/* Mobile Schutz nur für Seiten mit dem aktuellen Touchstone-Affiliate-Link. */
+body:has(a[href^="https://thevision.thegoodinside.com/detox/"]) .affiliate-banner>*{min-width:0}
+body:has(a[href^="https://thevision.thegoodinside.com/detox/"]) .title-only h1{overflow-wrap:anywhere;hyphens:auto}
