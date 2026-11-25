@@ -1,0 +1,101 @@
+.shl-home-button {
+  position: fixed;
+  top: 18px;
+  left: 20px;
+  z-index: 70;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, .94);
+  border: 1px solid rgba(255, 255, 255, .8);
+  box-shadow: 0 10px 30px rgba(28, 63, 36, .18);
+  border-radius: 12px;
+  color: #244d2d;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+}
+
+.shl-home-button svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.shl-home-button:focus-visible,
+.shl-logo-link:focus-visible {
+  outline: 3px solid #d6a91f;
+  outline-offset: 3px;
+}
+
+header .head-inner,
+header .head {
+  position: relative;
+  min-height: 110px;
+}
+
+.shl-logo-link {
+  position: absolute;
+  top: 50%;
+  left: 92px;
+  z-index: 5;
+  line-height: 0;
+  transform: translateY(-50%);
+}
+
+.shl-logo {
+  display: block;
+  width: 265px;
+  max-width: 46vw;
+  height: auto;
+}
+
+header .top-cta {
+  margin-left: auto;
+}
+
+@media (max-width: 720px) {
+  .shl-home-button {
+    top: 12px;
+    left: 12px;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+  }
+
+  header .head-inner,
+  header .head {
+    min-height: 80px;
+  }
+
+  .shl-logo-link {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .shl-logo {
+    width: 188px;
+    max-width: 58vw;
+  }
+
+  header .top-cta {
+    width: 43px;
+    height: 43px;
+    padding: 0;
+    margin-left: auto;
+    flex: 0 0 43px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+  }
+
+  header .top-cta::before {
+    content: "🌿";
+    font-size: 18px;
+  }
+}
